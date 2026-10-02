@@ -59,7 +59,16 @@ Out of scope:
 
 ## Design process
 
-The repository mirrors the Figma process from discovery through case study. Detailed work after the initial brief and discovery framing is **Pending**.
+Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. Detailed work after the approved cover and original-brief milestones is **Pending**.
+
+## Approved Figma milestones
+
+| Milestone | Frame | Status | Figma node |
+| --- | --- | --- | --- |
+| 00 — Cover | COVER — Project Overview | **APPROVED** | `5:2` |
+| 01.1 — Original Brief | DISCOVERY — 01 Original Brief | **APPROVED** | `11:2` |
+
+`DISCOVERY — 02 Brief Audit` is not approved.
 
 ## Repository structure
 
@@ -85,9 +94,7 @@ No application framework has been selected and no application source tree exists
 
 ## Figma
 
-The existing Figma file is the design source of truth. Its pages cover the process from cover and discovery through QA and case study, with dedicated pages for candidates and archived artifacts.
-
-A Figma URL and further design documentation are **Pending**.
+The [main Volt Figma project](https://www.figma.com/design/UIEx2VVwyPeGFUzwkh2dkn/Volt-%E2%80%94-E-commerce-UI---Interactive-Prototype) is the primary design artifact and design source of truth. GitHub preserves the supporting documentation and implementation history and will later preserve the coded prototype.
 
 ## Interactive prototype
 
