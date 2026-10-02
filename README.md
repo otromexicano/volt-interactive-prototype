@@ -2,7 +2,7 @@
 
 **Project status:** In progress
 
-**Current phase:** PHASE 01 — PRODUCT BRIEF
+**Current phase:** PHASE 02 — UX ASSUMPTIONS — COMPLETE / APPROVED
 
 **Project type:** Portfolio concept / interactive UI prototype
 
@@ -61,7 +61,7 @@ Out of scope:
 
 ## Design process
 
-Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. The canonical workflow is governed by [AGENTS.md](AGENTS.md), and the current canonical product brief is [docs/BRIEF.md](docs/BRIEF.md). Work after Phase 01 remains **Pending**.
+Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. The canonical workflow is governed by [AGENTS.md](AGENTS.md). Phase 01 is complete in [docs/BRIEF.md](docs/BRIEF.md), and Phase 02 is complete in [docs/UX_ASSUMPTIONS.md](docs/UX_ASSUMPTIONS.md). Work after Phase 02 remains **Pending**.
 
 ## Approved Figma milestones
 
@@ -71,6 +71,7 @@ Figma is the primary design artifact. This repository preserves supporting docum
 | 01.1 — Original Brief | DISCOVERY — 01 Original Brief | **APPROVED** | `11:2` |
 | 01.2 — Brief Audit | DISCOVERY — 02 Brief Audit | **APPROVED** | `15:2` |
 | 01.3 — Problem Framing | DISCOVERY — 03 Problem Framing | **APPROVED** | `25:2` |
+| 02 — UX Assumptions | DISCOVERY — 04 UX Assumptions | **COMPLETE / APPROVED** | `34:2` |
 
 ## Repository structure
 
@@ -78,6 +79,7 @@ Figma is the primary design artifact. This repository preserves supporting docum
 AGENTS.md
 docs/
   BRIEF.md
+  UX_ASSUMPTIONS.md
   00-project-brief.md
   01-discovery.md
   02-ia-flows.md
@@ -142,4 +144,4 @@ Meaningful design and implementation history must be preserved.
 
 ## Current status
 
-The repository, approved Discovery artifacts, canonical workflow governance, and Phase 01 product brief are initialized. The project remains in progress. UX assumptions, information architecture, flows, wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
+The repository, approved Discovery artifacts, canonical workflow governance, Phase 01 product brief, and Phase 02 UX assumptions are complete. The project remains in progress. Information architecture, flows, wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
