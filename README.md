@@ -2,6 +2,8 @@
 
 **Project status:** In progress
 
+**Current phase:** PHASE 01 — PRODUCT BRIEF
+
 **Project type:** Portfolio concept / interactive UI prototype
 
 **Source:** Goodbrief design brief
@@ -59,7 +61,7 @@ Out of scope:
 
 ## Design process
 
-Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. Detailed work after the approved Brief Audit milestone is **Pending**.
+Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. The canonical workflow is governed by [AGENTS.md](AGENTS.md), and the current canonical product brief is [docs/BRIEF.md](docs/BRIEF.md). Work after Phase 01 remains **Pending**.
 
 ## Approved Figma milestones
 
@@ -68,11 +70,14 @@ Figma is the primary design artifact. This repository preserves supporting docum
 | 00 — Cover | COVER — Project Overview | **APPROVED** | `5:2` |
 | 01.1 — Original Brief | DISCOVERY — 01 Original Brief | **APPROVED** | `11:2` |
 | 01.2 — Brief Audit | DISCOVERY — 02 Brief Audit | **APPROVED** | `15:2` |
+| 01.3 — Problem Framing | DISCOVERY — 03 Problem Framing | **APPROVED** | `25:2` |
 
 ## Repository structure
 
 ```text
+AGENTS.md
 docs/
+  BRIEF.md
   00-project-brief.md
   01-discovery.md
   02-ia-flows.md
@@ -86,6 +91,8 @@ docs/
   10-qa.md
   11-case-study.md
   decision-log.md
+prototype/
+case-study/
 archive/
 ```
 
@@ -135,4 +142,4 @@ Meaningful design and implementation history must be preserved.
 
 ## Current status
 
-The repository and initial source-grounded documentation are initialized. Information architecture, flows, wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
+The repository, approved Discovery artifacts, canonical workflow governance, and Phase 01 product brief are initialized. The project remains in progress. UX assumptions, information architecture, flows, wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
