@@ -99,3 +99,43 @@ Do not advance into the next phase merely because a draft exists. Pending work r
 ## Git rule
 
 Do not run `git add`, `git commit`, or `git push` from Codex. Git checkpoints are performed separately by the user in PowerShell after a phase is approved.
+
+# WORKFLOW AUTHORITY
+
+This project is governed by:
+
+docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt
+
+Before performing any project phase, Codex MUST:
+
+1. Read AGENTS.md.
+2. Read docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt.
+3. Identify the current approved phase/checkpoint.
+4. Read only the canonical artifacts required by that phase.
+5. Perform only the requested phase scope.
+6. Run the phase-specific quality gate.
+7. Stop before the next phase.
+8. Wait for human approval when required.
+
+The Master Workflow Playbook is the canonical process authority.
+
+If AGENTS.md, a prompt, an existing document, or a prior AI-generated
+artifact conflicts with the Master Workflow Playbook, STOP and report
+the conflict before proceeding.
+
+Do not silently reinterpret, skip, merge, or reorder workflow phases.
+
+Do not begin a later phase because its work appears useful.
+
+Do not implement Foundations, Components, Hi-Fi, Responsive, Prototype,
+QA, or Case Study work before their corresponding workflow gates.
+
+If a run is interrupted, resume from the exact current checkpoint
+according to the Master Workflow Playbook.
+
+Human approval governs:
+- UX direction selection
+- visual direction selection
+- brand identity selection
+- significant product tradeoffs
+- final quality approval
