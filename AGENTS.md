@@ -99,3 +99,114 @@ Do not advance into the next phase merely because a draft exists. Pending work r
 ## Git rule
 
 Do not run `git add`, `git commit`, or `git push` from Codex. Git checkpoints are performed separately by the user in PowerShell after a phase is approved.
+
+## Product Design + Design Engineering Master Workflow
+
+The reusable project methodology is defined in:
+
+`docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt`
+
+Use that playbook for substantial work involving:
+
+- product discovery and definition
+- user flows and information architecture
+- interaction contracts
+- visual direction and brand
+- Figma and Figma MCP
+- design systems and tokens
+- Figma-to-code workflows
+- React and Next.js implementation
+- TypeScript architecture
+- Storybook
+- motion and microinteractions
+- Playwright
+- accessibility
+- visual regression
+- responsive and real-data validation
+- performance
+- Figma ↔ code parity
+- product metrics
+- release gates
+- case-study evidence
+
+The existing Volt workflow and historical approvals remain valid.
+
+Do not restart completed phases merely because the master workflow contains additional phases.
+
+For the current project:
+
+1. Preserve existing approved artifacts.
+2. Map completed work into the new master workflow.
+3. Add only the missing engineering, interaction, QA, and evidence layers.
+4. Continue from the latest approved checkpoint.
+
+### Engineering standard
+
+The browser prototype uses:
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- reusable component architecture
+
+Use current version-matched Next.js guidance from `prototype/AGENTS.md`.
+
+Prefer:
+
+- Server Components when appropriate
+- Client Components only when interaction requires them
+- typed component APIs
+- semantic HTML
+- reusable components
+- design tokens instead of arbitrary values
+- explicit loading, empty, error, and success states
+- accessible keyboard interaction
+- reduced-motion support
+- responsive behavior based on real content
+
+### Completion rule
+
+A feature is not complete when its Figma frame is complete.
+
+A feature is complete only after the applicable gates pass:
+
+DESIGN
++
+INTERACTION
++
+DESIGN SYSTEM
++
+CODE
++
+RESPONSIVE
++
+ACCESSIBILITY
++
+TESTING
++
+PERFORMANCE
++
+FIGMA/CODE PARITY
++
+CLAIM INTEGRITY
++
+CASE STUDY EVIDENCE
+
+### Planning
+
+For substantial features, architecture changes, or multi-phase implementation work, create an execution plan before modifying the implementation.
+
+The plan must identify:
+
+- source artifacts
+- existing approved work
+- intended changes
+- files affected
+- Figma dependencies
+- component/system implications
+- interaction states
+- accessibility considerations
+- testing strategy
+- case-study evidence to preserve
+
