@@ -2,7 +2,7 @@
 
 **Project status:** In progress
 
-**Current phase:** PHASE 03 — INFORMATION ARCHITECTURE — COMPLETE / APPROVED
+**Current phase:** PHASE 04 — PRIMARY FLOW — COMPLETE / APPROVED
 
 **Project type:** Portfolio concept / interactive UI prototype
 
@@ -61,7 +61,7 @@ Out of scope:
 
 ## Design process
 
-Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. The canonical workflow is governed by [AGENTS.md](AGENTS.md). Phase 01 is complete in [docs/BRIEF.md](docs/BRIEF.md), Phase 02 is complete in [docs/UX_ASSUMPTIONS.md](docs/UX_ASSUMPTIONS.md), and Phase 03 is complete in [docs/INFORMATION_ARCHITECTURE.md](docs/INFORMATION_ARCHITECTURE.md). Work after Phase 03 remains **Pending**.
+Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. The canonical workflow is governed by [AGENTS.md](AGENTS.md). Phase 01 is complete in [docs/BRIEF.md](docs/BRIEF.md), Phase 02 is complete in [docs/UX_ASSUMPTIONS.md](docs/UX_ASSUMPTIONS.md), Phase 03 is complete in [docs/INFORMATION_ARCHITECTURE.md](docs/INFORMATION_ARCHITECTURE.md), and Phase 04 is complete in [docs/PRIMARY_FLOW.md](docs/PRIMARY_FLOW.md). Work after Phase 04 remains **Pending**.
 
 ## Approved Figma milestones
 
@@ -73,6 +73,7 @@ Figma is the primary design artifact. This repository preserves supporting docum
 | 01.3 — Problem Framing | DISCOVERY — 03 Problem Framing | **APPROVED** | `25:2` |
 | 02 — UX Assumptions | DISCOVERY — 04 UX Assumptions | **COMPLETE / APPROVED** | `34:2` |
 | 03 — Information Architecture | IA — 01 Product Architecture | **COMPLETE / APPROVED** | `39:2` |
+| 04 — Primary Flow | FLOW — 01 Primary Discovery & Support | **COMPLETE / APPROVED** | `44:2` |
 
 ## Repository structure
 
@@ -82,6 +83,7 @@ docs/
   BRIEF.md
   UX_ASSUMPTIONS.md
   INFORMATION_ARCHITECTURE.md
+  PRIMARY_FLOW.md
   00-project-brief.md
   01-discovery.md
   02-ia-flows.md
@@ -146,4 +148,4 @@ Meaningful design and implementation history must be preserved.
 
 ## Current status
 
-The repository, approved Discovery artifacts, canonical workflow governance, Phase 01 product brief, Phase 02 UX assumptions, and Phase 03 information architecture are complete. The project remains in progress. Primary flows, wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
+The repository, approved Discovery artifacts, canonical workflow governance, Phase 01 product brief, Phase 02 UX assumptions, Phase 03 information architecture, and Phase 04 primary flow are complete. The project remains in progress. Wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
