@@ -59,7 +59,7 @@ Out of scope:
 
 ## Design process
 
-Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. Detailed work after the approved cover and original-brief milestones is **Pending**.
+Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. Detailed work after the approved Brief Audit milestone is **Pending**.
 
 ## Approved Figma milestones
 
@@ -67,8 +67,7 @@ Figma is the primary design artifact. This repository preserves supporting docum
 | --- | --- | --- | --- |
 | 00 — Cover | COVER — Project Overview | **APPROVED** | `5:2` |
 | 01.1 — Original Brief | DISCOVERY — 01 Original Brief | **APPROVED** | `11:2` |
-
-`DISCOVERY — 02 Brief Audit` is not approved.
+| 01.2 — Brief Audit | DISCOVERY — 02 Brief Audit | **APPROVED** | `15:2` |
 
 ## Repository structure
 
