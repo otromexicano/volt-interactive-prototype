@@ -1,0 +1,2014 @@
+PRODUCT DESIGN + DESIGN ENGINEERING
+MASTER WORKFLOW PLAYBOOK
+
+Version: 1.1
+Purpose: Reusable workflow for Product Design, Design Systems, Figma MCP, interactive implementation, engineering QA, and portfolio case studies.
+
+==================================================
+0. PURPOSE
+==================================================
+
+This document defines the default workflow for all future Product Design case studies.
+
+The project must not stop at static Figma screens.
+
+The complete objective is to take a product from:
+
+DISCOVERY
+↓
+PRODUCT DEFINITION
+↓
+USER FLOW
+↓
+INFORMATION ARCHITECTURE
+↓
+INTERACTION CONTRACT
+↓
+VISUAL DIRECTION
+↓
+BRAND
+↓
+FIGMA
+↓
+DESIGN SYSTEM
+↓
+TOKENS
+↓
+CODE CONNECT
+↓
+REACT COMPONENTS
+↓
+FRONTEND ENGINEERING STANDARDS
+↓
+STORYBOOK
+↓
+MOTION
+↓
+PRODUCT IMPLEMENTATION
+↓
+PLAYWRIGHT
+↓
+ACCESSIBILITY
+↓
+VISUAL REGRESSION
+↓
+RESPONSIVE / REAL DATA
+↓
+PERFORMANCE
+↓
+FIGMA ↔ CODE PARITY
+↓
+PRODUCT METRICS
+↓
+RELEASE GATE
+↓
+CASE STUDY EVIDENCE
+
+A project is not considered complete because the Figma screens look finished.
+
+A project is complete only when the design, system, interactions, implementation, responsive behavior, accessibility, engineering quality, and case-study evidence have all been validated.
+
+==================================================
+1. CORE PRINCIPLE
+==================================================
+
+Every project must demonstrate four capabilities simultaneously:
+
+PRODUCT DESIGNER
++
+VISUAL / BRAND DESIGNER
++
+DESIGN SYSTEMS DESIGNER
++
+DESIGN ENGINEER
+
+The workflow must preserve evidence of all four.
+
+Do not optimize only for visual quality.
+
+Do not optimize only for code quality.
+
+Do not optimize only for portfolio storytelling.
+
+The final product must connect all three:
+
+DESIGN QUALITY
++
+IMPLEMENTATION QUALITY
++
+CASE STUDY QUALITY
+
+==================================================
+2. SOURCE OF TRUTH
+==================================================
+
+The project has several sources of truth, each responsible for a different area.
+
+PRODUCT DECISIONS
+
+Product documentation / project context is the source of truth for:
+
+- problem
+- users
+- goals
+- requirements
+- constraints
+- hypotheses
+- success criteria
+
+FIGMA
+
+Figma is the source of truth for:
+
+- visual design
+- layout
+- component anatomy
+- design-system structure
+- variants
+- states
+- typography
+- color
+- spacing
+- design tokens
+- visual specifications
+
+CODE REPOSITORY
+
+The local code repository is the source of truth for:
+
+- React components
+- application behavior
+- interaction logic
+- production states
+- data behavior
+- accessibility implementation
+- responsive behavior
+
+STORYBOOK
+
+Storybook is the source of truth for:
+
+- isolated component behavior
+- component states
+- component documentation
+- interaction tests
+- visual component QA
+
+GIT / GITHUB
+
+Git tracks implementation history.
+
+Default workflow:
+
+Codex
+↓
+local repository
+↓
+PowerShell
+↓
+git status
+↓
+git add
+↓
+git commit
+↓
+git push
+↓
+GitHub
+
+GitHub integration inside ChatGPT is optional.
+
+PowerShell can continue to handle commits and pushes.
+
+==================================================
+3. AGENT ARCHITECTURE
+==================================================
+
+Codex should behave as a coordinated Product Design + Design Engineering system.
+
+Conceptually, the following roles exist:
+
+PRODUCT DESIGN DIRECTOR
+
+Responsible for:
+
+- problem framing
+- user needs
+- product goals
+- workflows
+- IA
+- UX decisions
+- edge cases
+- product logic
+
+VISUAL DESIGN DIRECTOR
+
+Responsible for:
+
+- visual hierarchy
+- typography
+- composition
+- spacing
+- color
+- rhythm
+- density
+- imagery
+- art direction
+- overall polish
+
+BRAND DESIGN DIRECTOR
+
+Responsible for:
+
+- brand direction
+- logo
+- identity
+- color language
+- typography
+- imagery
+- iconography
+- visual personality
+
+DESIGN SYSTEMS DIRECTOR
+
+Responsible for:
+
+- primitives
+- semantic tokens
+- components
+- variants
+- component API
+- Auto Layout
+- naming conventions
+- reuse
+- consistency
+
+INTERACTION DIRECTOR
+
+Responsible for:
+
+- hover
+- focus
+- pressed
+- active
+- selected
+- loading
+- success
+- error
+- empty
+- transitions
+- motion
+- keyboard interaction
+- responsive interaction
+
+DESIGN ENGINEERING DIRECTOR
+
+Responsible for:
+
+- Figma → code translation
+- React architecture
+- Next.js architecture when applicable
+- reusable components
+- TypeScript
+- interaction implementation
+- Storybook
+- testing
+- accessibility
+- performance
+- Figma/code parity
+
+DESIGN QA DIRECTOR
+
+Responsible for detecting:
+
+- visual inconsistencies
+- spacing problems
+- hierarchy problems
+- token violations
+- detached patterns
+- accessibility issues
+- responsive problems
+- implementation mismatches
+
+CASE STUDY DIRECTOR
+
+Responsible for preserving evidence of:
+
+- problem
+- decisions
+- process
+- artifacts
+- iterations
+- systems thinking
+- implementation
+- QA
+- outcomes
+
+==================================================
+4. PHASE 01 — DISCOVERY
+==================================================
+
+Goal:
+
+Understand the actual problem before designing a solution.
+
+Collect only evidence that genuinely exists.
+
+Do not invent research, interviews, metrics, users, business requirements, or outcomes.
+
+Document:
+
+- context
+- problem
+- users
+- current experience
+- business need
+- constraints
+- technical constraints
+- existing product
+- existing artifacts
+- known pain points
+- assumptions
+- missing information
+
+Separate:
+
+KNOWN FACTS
+
+from:
+
+ASSUMPTIONS
+
+from:
+
+HYPOTHESES
+
+from:
+
+UNKNOWN
+
+This distinction must remain visible throughout the project.
+
+OUTPUT
+
+Discovery brief.
+
+GATE
+
+Do not proceed until the actual problem can be explained clearly in approximately 2–3 sentences.
+
+==================================================
+5. PHASE 02 — PRODUCT DEFINITION
+==================================================
+
+Define what the product or feature must accomplish.
+
+Document:
+
+- primary user
+- primary problem
+- primary job to be done
+- product goal
+- user goal
+- business goal
+- project constraints
+- success criteria
+- non-goals
+
+Define:
+
+WHAT WE ARE SOLVING
+
+and:
+
+WHAT WE ARE NOT SOLVING
+
+Avoid uncontrolled scope expansion.
+
+OUTPUT
+
+Product definition.
+
+GATE
+
+Every major feature must connect to a known user or product need.
+
+==================================================
+6. PHASE 03 — USER FLOW
+==================================================
+
+Map the core experience before designing screens.
+
+For each primary task define:
+
+ENTRY
+↓
+USER ACTION
+↓
+SYSTEM RESPONSE
+↓
+NEXT DECISION
+↓
+SUCCESS / FAILURE
+
+Include:
+
+- happy path
+- alternate path
+- cancellation
+- error path
+- empty state
+- permissions where relevant
+- recovery path
+
+Avoid designing screens independently without understanding how they connect.
+
+OUTPUT
+
+User-flow map.
+
+GATE
+
+Every important screen must have a reason to exist in the flow.
+
+==================================================
+7. PHASE 04 — INFORMATION ARCHITECTURE
+==================================================
+
+Determine how information is organized.
+
+Define:
+
+- navigation
+- hierarchy
+- sections
+- groups
+- parent/child relationships
+- content priority
+- search/filter structure
+- metadata
+- page relationships
+
+Ask:
+
+What information does the user need first?
+
+What belongs together?
+
+What should be hidden until needed?
+
+What should remain persistent?
+
+OUTPUT
+
+Information architecture.
+
+GATE
+
+The content structure must make sense without relying on visual styling.
+
+==================================================
+8. PHASE 05 — INTERACTION CONTRACT
+==================================================
+
+Before polishing UI, define how important components behave.
+
+Every major component should have an interaction contract.
+
+Example:
+
+AUDIT CARD
+
+Visual states:
+
+- default
+- hover
+- focused
+- selected
+- disabled
+
+Data states:
+
+- loading
+- populated
+- empty
+- error
+
+Interaction:
+
+- click
+- keyboard
+- focus
+- screen reader
+
+Responsive:
+
+- mobile
+- tablet
+- desktop
+
+Motion:
+
+- entrance
+- exit
+- state transition
+- reduced-motion behavior
+
+The goal is to prevent designing only the happy path.
+
+OUTPUT
+
+Interaction-state specification.
+
+GATE
+
+No major interactive component should enter implementation without its states being defined.
+
+==================================================
+9. PHASE 06 — VISUAL DIRECTION
+==================================================
+
+Before building the final UI, establish visual direction.
+
+Explore:
+
+- visual tone
+- density
+- composition
+- typography
+- layout
+- grid
+- spacing
+- color philosophy
+- surface treatment
+- radius
+- shadows
+- imagery
+- iconography
+- motion personality
+
+Avoid generic AI-generated interfaces.
+
+Avoid blindly copying existing products.
+
+References may inform principles but should not become direct copies.
+
+Ask:
+
+Does this visual language match the product?
+
+Does it create a recognizable identity?
+
+Does it support usability?
+
+Does it feel intentional?
+
+OUTPUT
+
+Visual direction / moodboard / exploratory frames.
+
+GATE
+
+The visual direction must be strong enough to guide all subsequent screens.
+
+==================================================
+10. PHASE 07 — BRAND
+==================================================
+
+If the project requires brand development, define:
+
+- brand attributes
+- logo
+- wordmark
+- symbol
+- logo variants
+- typography
+- color system
+- imagery
+- iconography
+- motion principles
+- tone
+- brand applications
+
+Test logo and identity at:
+
+- small size
+- large size
+- monochrome
+- light background
+- dark background
+
+Brand should influence the product experience without harming usability.
+
+OUTPUT
+
+Brand system.
+
+GATE
+
+Identity must work as a system rather than as an isolated logo.
+
+==================================================
+11. PHASE 08 — FIGMA
+==================================================
+
+Build the product in Figma using structured, reusable design practices.
+
+Use:
+
+- Auto Layout
+- components
+- variants
+- variables
+- component properties
+- semantic naming
+- consistent constraints
+- reusable patterns
+
+Avoid:
+
+- detached copies
+- arbitrary spacing
+- unnecessary one-off components
+- hardcoded colors where tokens should exist
+- manual positioning when Auto Layout is appropriate
+
+Figma MCP should be used as an execution and inspection layer.
+
+The agent should inspect before modifying.
+
+Default loop:
+
+READ
+↓
+UNDERSTAND
+↓
+PLAN
+↓
+EDIT
+↓
+SCREENSHOT / INSPECT
+↓
+QA
+↓
+FIX
+↓
+REPEAT
+
+OUTPUT
+
+Production-quality Figma screens.
+
+GATE
+
+VISUAL QUALITY: PASS
+
+UX LOGIC: PASS
+
+COMPONENT CONSISTENCY: PASS
+
+RESPONSIVE INTENT: PASS
+
+==================================================
+12. PHASE 09 — DESIGN SYSTEM
+==================================================
+
+Extract recurring patterns into a formal system.
+
+Define foundations:
+
+- color
+- typography
+- spacing
+- radius
+- elevation
+- iconography
+- motion
+
+Define components:
+
+- buttons
+- inputs
+- cards
+- badges
+- navigation
+- menus
+- modals
+- tooltips
+- tables
+- filters
+- forms
+- empty states
+- alerts
+
+For each component define:
+
+- anatomy
+- properties
+- variants
+- states
+- responsive behavior
+- usage
+- accessibility behavior
+
+Avoid creating components merely because something appears twice.
+
+A component should represent meaningful reuse.
+
+OUTPUT
+
+Design-system library.
+
+GATE
+
+Repeated visual and interaction patterns must have a consistent system.
+
+==================================================
+13. PHASE 10 — TOKENS
+==================================================
+
+Translate visual decisions into design tokens.
+
+Use three layers where appropriate.
+
+PRIMITIVE TOKENS
+
+Example:
+
+gray.100
+gray.900
+blue.500
+space.4
+radius.8
+
+SEMANTIC TOKENS
+
+Example:
+
+text.primary
+text.secondary
+surface.default
+surface.elevated
+border.default
+action.primary
+
+COMPONENT TOKENS
+
+Example:
+
+button.primary.background
+button.primary.text
+card.border
+input.focus.ring
+
+Tokens should connect design and code.
+
+Preferred architecture:
+
+TOKEN SOURCE
+↙          ↘
+FIGMA      CODE
+
+Avoid having unrelated token definitions manually maintained in multiple locations whenever possible.
+
+OUTPUT
+
+Token architecture.
+
+GATE
+
+Important visual properties should have systematic rather than arbitrary values.
+
+==================================================
+14. PHASE 11 — CODE CONNECT
+==================================================
+
+Map design-system components in Figma to actual implementation components where appropriate.
+
+Example:
+
+Figma:
+
+Button / Primary
+
+Code:
+
+<Button variant="primary" />
+
+Figma:
+
+Risk Badge / Critical
+
+Code:
+
+<RiskBadge severity="critical" />
+
+The goal is to avoid generating raw HTML/CSS for something that already exists as a production component.
+
+OUTPUT
+
+Figma ↔ component mapping.
+
+GATE
+
+Shared components should reuse the existing implementation architecture whenever possible.
+
+==================================================
+15. PHASE 12 — REACT COMPONENTS
+==================================================
+
+Implement reusable product components.
+
+Default preferred stack when compatible with the existing project:
+
+- React
+- TypeScript
+- Next.js or existing project framework
+- project styling system
+- reusable component architecture
+
+Each important component should support:
+
+- props
+- states
+- accessibility
+- responsive behavior
+- real content
+- loading
+- errors where relevant
+
+Do not implement screens as large monolithic components.
+
+Prefer reusable, understandable architecture.
+
+OUTPUT
+
+Functional reusable components.
+
+GATE
+
+CODE QUALITY: PASS
+
+REUSABILITY: PASS
+
+TYPE SAFETY: PASS
+
+ACCESSIBILITY STRUCTURE: PASS
+
+==================================================
+16. PHASE 13 — FRONTEND ENGINEERING STANDARDS
+==================================================
+
+Goal:
+
+Ensure that the implementation is not only visually accurate, but also architecturally sound, maintainable, performant, and production-oriented.
+
+Default preferred stack when compatible with the existing project:
+
+- React
+- Next.js
+- TypeScript
+- existing project styling system
+- reusable component architecture
+- Motion / Framer Motion when motion is required
+
+Use Vercel React and Next.js best practices as an engineering quality reference.
+
+COMPONENT ARCHITECTURE
+
+Prefer:
+
+- small reusable components
+- clear ownership
+- composition over duplication
+- predictable props
+- semantic APIs
+- separation between UI and business logic
+
+Avoid:
+
+- giant page components
+- repeated markup
+- unnecessary wrappers
+- duplicated interaction logic
+- one-off UI implementations when a system component exists
+
+REACT QUALITY
+
+Check for:
+
+- unnecessary rerenders
+- unstable dependencies
+- excessive state
+- derived state stored unnecessarily
+- poor component boundaries
+- unnecessary client components
+- expensive effects
+- unnecessary context usage
+- avoidable waterfalls
+
+Use server/client boundaries intentionally when using Next.js.
+
+NEXT.JS QUALITY
+
+When using Next.js, evaluate:
+
+- Server Components
+- Client Components
+- routing
+- layouts
+- loading states
+- error boundaries
+- image optimization
+- font optimization
+- data fetching
+- caching
+- streaming where relevant
+
+Do not force everything into client-side rendering.
+
+TYPESCRIPT
+
+Use meaningful types.
+
+Avoid unnecessary:
+
+any
+
+Prefer:
+
+- typed component props
+- typed domain objects
+- typed states
+- typed event handlers
+- reusable interfaces/types where appropriate
+
+TypeScript should improve product reliability rather than exist only for syntax.
+
+STATE ARCHITECTURE
+
+Before adding state, ask:
+
+Does this need local state?
+
+Does this belong in URL state?
+
+Does this come from server data?
+
+Can this value be derived?
+
+Does this belong in a shared store?
+
+Avoid unnecessary global state.
+
+DATA STATES
+
+Every important data-dependent component must consider:
+
+- initial
+- loading
+- populated
+- empty
+- partial
+- error
+- retry
+- stale data where relevant
+
+Do not implement only the ideal data state.
+
+FORMS
+
+Forms must consider:
+
+- validation
+- disabled state
+- submitting
+- success
+- server error
+- field error
+- keyboard submission
+- focus management
+- accessible labels
+- error recovery
+
+MOTION IMPLEMENTATION
+
+When motion is required, use a consistent motion system.
+
+Define:
+
+- duration
+- easing
+- entrance
+- exit
+- hover
+- press
+- layout transitions
+- reduced-motion behavior
+
+Avoid arbitrary animation values in every component.
+
+PERFORMANCE
+
+Review:
+
+- JavaScript bundle
+- lazy loading
+- code splitting
+- image size
+- rendering cost
+- animation cost
+- network waterfalls
+- unnecessary dependencies
+- layout shift
+
+Performance is part of UX.
+
+ENGINEERING GATE
+
+Before proceeding:
+
+REACT ARCHITECTURE — PASS
+
+NEXT.JS ARCHITECTURE — PASS / N/A
+
+TYPESCRIPT — PASS
+
+STATE MANAGEMENT — PASS
+
+DATA STATES — PASS
+
+FORM BEHAVIOR — PASS / N/A
+
+MOTION IMPLEMENTATION — PASS / N/A
+
+PERFORMANCE BASELINE — PASS
+
+Only then continue to Storybook and product-level testing.
+
+==================================================
+17. PHASE 14 — STORYBOOK
+==================================================
+
+Create stories for important reusable components.
+
+At minimum test:
+
+- default
+- hover where practical
+- focus
+- active
+- disabled
+- loading
+- empty
+- error
+- success
+- long content
+- narrow viewport
+- wide viewport
+
+Use Storybook as the component laboratory.
+
+The component should be testable independently of the full product.
+
+OUTPUT
+
+Component stories.
+
+GATE
+
+Major reusable components should have documented and testable states.
+
+==================================================
+18. PHASE 15 — MOTION
+==================================================
+
+Add motion only where it improves:
+
+- understanding
+- orientation
+- feedback
+- continuity
+- hierarchy
+- perceived quality
+
+Examples:
+
+- modal transitions
+- expand/collapse
+- loading transitions
+- selection states
+- hover feedback
+- page transitions
+- shared layout transitions
+- progressive reveal
+
+Avoid animation for decoration alone.
+
+Every meaningful animation should consider:
+
+prefers-reduced-motion.
+
+OUTPUT
+
+Interaction and motion system.
+
+GATE
+
+Motion must improve usability or communication rather than distract from it.
+
+==================================================
+19. PHASE 16 — PRODUCT IMPLEMENTATION
+==================================================
+
+Build the actual interactive experience.
+
+The result should not be a static reproduction of the Figma frame.
+
+Implement:
+
+- navigation
+- forms
+- interactions
+- filters
+- dialogs
+- state transitions
+- loading
+- errors
+- success states
+- data behavior
+- responsive behavior
+- keyboard behavior
+
+Where backend functionality does not exist, clearly separate:
+
+REAL FUNCTIONALITY
+
+from:
+
+FRONTEND PROTOTYPE / SIMULATION
+
+Never claim simulated functionality is production backend functionality.
+
+OUTPUT
+
+Interactive working product/prototype.
+
+GATE
+
+The core user journey must be usable.
+
+==================================================
+20. PHASE 17 — PLAYWRIGHT
+==================================================
+
+Test actual product journeys in the browser.
+
+Example:
+
+OPEN PRODUCT
+↓
+START AUDIT
+↓
+VIEW RESULT
+↓
+OPEN FINDING
+↓
+FILTER RESULTS
+↓
+RESOLVE FINDING
+↓
+OPEN REPORT
+
+Test:
+
+- primary path
+- alternate path
+- forms
+- keyboard
+- modals
+- navigation
+- state changes
+- responsive viewports
+
+OUTPUT
+
+End-to-end test coverage for critical flows.
+
+GATE
+
+Critical journeys must function from beginning to end.
+
+==================================================
+21. PHASE 18 — ACCESSIBILITY
+==================================================
+
+Accessibility is not an optional final polish step.
+
+Check:
+
+- semantic HTML
+- keyboard navigation
+- focus order
+- visible focus
+- landmarks
+- headings
+- labels
+- ARIA where necessary
+- color contrast
+- screen-reader semantics
+- touch targets
+- error communication
+- reduced motion
+
+Combine automated checks with manual reasoning.
+
+Automated accessibility tools cannot validate every UX problem.
+
+OUTPUT
+
+Accessibility QA.
+
+GATE
+
+No known critical accessibility issue should remain unresolved without explicit documentation.
+
+==================================================
+22. PHASE 19 — VISUAL REGRESSION
+==================================================
+
+Establish visual baselines for important components and screens.
+
+When code changes:
+
+CODE CHANGE
+↓
+VISUAL TEST
+↓
+DIFFERENCE DETECTED
+↓
+EXPECTED?
+
+YES → APPROVE
+
+NO → FIX
+
+Test important:
+
+- components
+- viewports
+- themes
+- states
+
+OUTPUT
+
+Visual-regression coverage.
+
+GATE
+
+Unexpected visual regressions must be fixed before release.
+
+==================================================
+23. PHASE 20 — RESPONSIVE / REAL DATA
+==================================================
+
+Do not test only ideal mock content.
+
+Stress the interface.
+
+Test:
+
+- 320px layouts
+- mobile
+- tablet
+- laptop
+- large screens
+
+Test data extremes:
+
+0 items
+
+1 item
+
+many items
+
+very short text
+
+very long text
+
+long names
+
+missing images
+
+large numbers
+
+slow response
+
+error response
+
+limited permissions
+
+empty states
+
+The design must survive reality.
+
+OUTPUT
+
+Responsive and resilience validation.
+
+GATE
+
+The core product cannot break because of viewport or realistic data variation.
+
+==================================================
+24. PHASE 21 — PERFORMANCE
+==================================================
+
+Review implementation performance.
+
+Check:
+
+- bundle size
+- unnecessary dependencies
+- rerenders
+- image optimization
+- animation performance
+- layout shift
+- loading states
+- expensive effects
+- unnecessary client-side rendering
+- perceived speed
+
+Do not sacrifice maintainability for microscopic optimizations.
+
+Prioritize user-visible performance.
+
+OUTPUT
+
+Performance review.
+
+GATE
+
+No known major performance issue should materially degrade the core experience.
+
+==================================================
+25. PHASE 22 — FIGMA ↔ CODE PARITY
+==================================================
+
+Compare implementation against the approved design.
+
+Review:
+
+- typography
+- spacing
+- width
+- height
+- alignment
+- grid
+- color
+- border
+- radius
+- shadows
+- icons
+- states
+- responsive behavior
+
+Workflow:
+
+FIGMA
+↓
+IMPLEMENTATION SCREENSHOT
+↓
+COMPARE
+↓
+IDENTIFY DIFFERENCES
+↓
+FIX CODE OR DESIGN
+↓
+COMPARE AGAIN
+
+Do not blindly assume Figma is always correct.
+
+If implementation reveals a better solution, update the design system and document the decision.
+
+The objective is intentional parity, not pixel obedience.
+
+OUTPUT
+
+Approved Figma/code parity.
+
+GATE
+
+FIGMA ↔ CODE PARITY: PASS
+
+==================================================
+26. PHASE 23 — PRODUCT METRICS
+==================================================
+
+Connect design decisions to measurable outcomes whenever evidence exists.
+
+For major user actions define:
+
+USER GOAL
+↓
+INTERACTION
+↓
+EVENT
+↓
+METRIC
+↓
+SUCCESS CRITERIA
+
+Example:
+
+Goal:
+
+Understand an audit finding.
+
+Possible events:
+
+finding_opened
+evidence_expanded
+recommendation_viewed
+finding_resolved
+
+Possible metrics:
+
+resolution completion
+time to resolution
+
+Do not fabricate analytics results.
+
+Separate:
+
+PLANNED METRIC
+
+from:
+
+ACTUAL MEASURED RESULT
+
+OUTPUT
+
+Measurement plan or verified product metrics.
+
+GATE
+
+Important design decisions should have a clear intended product outcome.
+
+==================================================
+27. PHASE 24 — RELEASE GATE
+==================================================
+
+Nothing is considered complete until it passes the release checklist.
+
+Required:
+
+PRODUCT LOGIC: PASS
+
+USER FLOW: PASS
+
+VISUAL QUALITY: PASS
+
+BRAND CONSISTENCY: PASS
+
+DESIGN SYSTEM: PASS
+
+TOKENS: PASS
+
+COMPONENT STATES: PASS
+
+INTERACTION: PASS
+
+REACT ARCHITECTURE: PASS
+
+NEXT.JS ARCHITECTURE: PASS / N/A
+
+TYPESCRIPT: PASS
+
+STATE MANAGEMENT: PASS
+
+DATA STATES: PASS
+
+CODE QUALITY: PASS
+
+STORYBOOK: PASS
+
+PLAYWRIGHT: PASS
+
+ACCESSIBILITY: PASS
+
+VISUAL REGRESSION: PASS
+
+RESPONSIVE: PASS
+
+REAL DATA: PASS
+
+PERFORMANCE: PASS
+
+FIGMA ↔ CODE PARITY: PASS
+
+CLAIM INTEGRITY: PASS
+
+If something fails:
+
+FIX
+↓
+RETEST
+↓
+REVIEW
+
+Do not simply mark it complete.
+
+==================================================
+28. PHASE 25 — CASE STUDY EVIDENCE
+==================================================
+
+The case study should not be reconstructed from memory after the project is finished.
+
+Evidence must be collected throughout the workflow.
+
+Capture:
+
+- discovery artifacts
+- early explorations
+- rejected directions
+- flows
+- IA
+- interaction contracts
+- design iterations
+- before / after
+- brand explorations
+- component architecture
+- design tokens
+- Figma library
+- Storybook
+- implementation
+- code excerpts where useful
+- motion
+- responsive states
+- accessibility work
+- testing
+- Figma/code parity
+- metrics
+- final product
+
+For every major artifact ask:
+
+WHAT DOES THIS PROVE?
+
+Potential signals:
+
+PRODUCT DESIGN SIGNAL
+
+DESIGN SYSTEMS SIGNAL
+
+VISUAL DESIGN SIGNAL
+
+BRAND DESIGN SIGNAL
+
+DESIGN ENGINEERING SIGNAL
+
+ACCESSIBILITY SIGNAL
+
+QA SIGNAL
+
+PRODUCT THINKING SIGNAL
+
+Do not include artifacts only because they look impressive.
+
+Include artifacts that support the story.
+
+==================================================
+29. CLAIM INTEGRITY
+==================================================
+
+Never claim work that cannot be supported.
+
+Distinguish clearly between:
+
+ACTUAL
+
+PROTOTYPE
+
+PROPOSED
+
+CONCEPTUAL
+
+SIMULATED
+
+FUTURE
+
+Do not manufacture:
+
+- research
+- metrics
+- interviews
+- adoption
+- revenue impact
+- production usage
+- team collaboration
+- engineering implementation
+
+unless evidence exists.
+
+Portfolio credibility is more important than exaggerated impact.
+
+==================================================
+30. ITERATION RULE
+==================================================
+
+The workflow is not purely linear.
+
+At any stage discoveries may require returning to an earlier phase.
+
+Example:
+
+Implementation reveals component issue
+↓
+update design system
+↓
+update Figma
+↓
+update component
+↓
+update Storybook
+↓
+retest
+
+This is expected.
+
+The architecture is:
+
+ITERATIVE WITH QUALITY GATES
+
+not:
+
+ONE PASS WATERFALL
+
+==================================================
+31. COMPLETION DEFINITION
+==================================================
+
+A screen is NOT complete when its Figma frame is finished.
+
+A component is NOT complete when it renders.
+
+A feature is NOT complete when the happy path works.
+
+A project is complete when:
+
+DESIGN PASS
++
+INTERACTION PASS
++
+SYSTEM PASS
++
+REACT / NEXT.JS PASS
++
+CODE PASS
++
+RESPONSIVE PASS
++
+ACCESSIBILITY PASS
++
+TEST PASS
++
+PERFORMANCE PASS
++
+FIGMA/CODE PARITY PASS
++
+CLAIM INTEGRITY PASS
++
+CASE STUDY EVIDENCE PASS
+
+==================================================
+32. DEFAULT EXECUTION LOOP
+==================================================
+
+For every meaningful feature:
+
+UNDERSTAND
+↓
+INSPECT EXISTING SYSTEM
+↓
+PLAN
+↓
+DESIGN
+↓
+DEFINE STATES
+↓
+IMPLEMENT IN FIGMA
+↓
+VISUAL QA
+↓
+IMPLEMENT COMPONENTS
+↓
+FRONTEND ENGINEERING REVIEW
+↓
+STORYBOOK
+↓
+IMPLEMENT INTERACTION
+↓
+IMPLEMENT PRODUCT
+↓
+TEST
+↓
+ACCESSIBILITY
+↓
+RESPONSIVE QA
+↓
+VISUAL REGRESSION
+↓
+PERFORMANCE
+↓
+FIGMA ↔ CODE PARITY
+↓
+FIX
+↓
+RETEST
+↓
+DOCUMENT EVIDENCE
+↓
+PASS
+
+==================================================
+33. CODEX OPERATING RULES
+==================================================
+
+Codex should:
+
+1. Inspect before editing.
+2. Reuse existing architecture before creating new patterns.
+3. Preserve the established design system.
+4. Use components instead of duplicating UI.
+5. Use tokens instead of arbitrary values.
+6. Consider all important component states.
+7. Implement actual interactions.
+8. Validate responsive behavior.
+9. Validate accessibility.
+10. Test important journeys.
+11. Compare implementation against Figma.
+12. Apply React and Next.js best practices.
+13. Use TypeScript meaningfully.
+14. Avoid unnecessary client-side rendering.
+15. Avoid unnecessary state and rerenders.
+16. Fix detected problems rather than merely documenting them.
+17. Preserve evidence useful for the case study.
+18. Never invent project facts.
+19. Clearly label assumptions.
+20. Prefer systematic improvements over isolated patches.
+
+==================================================
+34. DESIGN QUALITY RULE
+==================================================
+
+Never accept:
+
+"It works."
+
+as sufficient.
+
+Evaluate:
+
+Does it work?
+
+Is it understandable?
+
+Is it reusable?
+
+Is it accessible?
+
+Is it responsive?
+
+Is it visually intentional?
+
+Does it belong to the system?
+
+Does it work with realistic data?
+
+Does it follow sound frontend architecture?
+
+Does it perform well?
+
+Does it match the product direction?
+
+Can we prove the work in the case study?
+
+==================================================
+35. FINAL ARCHITECTURE
+==================================================
+
+The complete system is:
+
+PRODUCT STRATEGY
+      ↓
+UX
+      ↓
+INTERACTION DESIGN
+      ↓
+VISUAL DESIGN
+      ↓
+BRAND
+      ↓
+FIGMA
+      ↓
+DESIGN SYSTEM
+      ↓
+TOKENS
+      ↓
+FIGMA MCP
+      ↕
+CODE CONNECT
+      ↕
+REACT COMPONENTS
+      ↓
+FRONTEND ENGINEERING STANDARDS
+      ↓
+NEXT.JS / TYPESCRIPT
+      ↕
+STORYBOOK
+      ↓
+MOTION
+      ↓
+PRODUCT IMPLEMENTATION
+      ↓
+PLAYWRIGHT
+      ↓
+ACCESSIBILITY
+      ↓
+VISUAL REGRESSION
+      ↓
+RESPONSIVE / REAL DATA
+      ↓
+PERFORMANCE
+      ↓
+FIGMA ↔ CODE PARITY
+      ↓
+PRODUCT METRICS
+      ↓
+RELEASE GATE
+      ↓
+CASE STUDY EVIDENCE
+
+==================================================
+36. RECOMMENDED CODEX DESIGN + ENGINEERING STACK
+==================================================
+
+DESIGN
+
+- ui-ux-pro-max
+- frontend-design
+- product-design-director
+- visual-design-director
+- brand-design-director
+
+FIGMA
+
+- Figma MCP
+- figma-use
+- figma-generate-design
+- skills-for-figma
+- figma-design-qa
+
+DESIGN SYSTEM
+
+- design tokens
+- variables
+- components
+- variants
+- Code Connect
+
+ENGINEERING
+
+- React
+- Next.js
+- TypeScript
+- Vercel React Best Practices
+- design-engineering-director
+
+INTERACTION
+
+- Motion / Framer Motion
+- interaction-contract
+
+COMPONENT QA
+
+- Storybook
+
+PRODUCT QA
+
+- Playwright
+- accessibility testing
+- visual regression
+- real-data testing
+- responsive testing
+- performance testing
+- Figma ↔ Code parity
+
+CASE STUDY
+
+- case-study-design-director
+
+GitHub connector is optional when the project already uses a local repository and PowerShell for Git operations.
+
+==================================================
+37. FINAL OBJECTIVE
+==================================================
+
+The final case study should prove that the designer can:
+
+UNDERSTAND A PRODUCT PROBLEM
+
+↓
+
+DESIGN THE EXPERIENCE
+
+↓
+
+CREATE THE VISUAL SYSTEM
+
+↓
+
+BUILD THE DESIGN SYSTEM
+
+↓
+
+DEFINE THE INTERACTIONS
+
+↓
+
+IMPLEMENT THE EXPERIENCE
+
+↓
+
+CONNECT DESIGN AND CODE
+
+↓
+
+BUILD SOUND REACT / NEXT.JS ARCHITECTURE
+
+↓
+
+TEST THE PRODUCT
+
+↓
+
+VALIDATE QUALITY
+
+↓
+
+MEASURE OUTCOMES
+
+↓
+
+COMMUNICATE THE WORK CLEARLY
+
+The target profile is:
+
+PRODUCT DESIGNER
++
+DESIGN SYSTEMS DESIGNER
++
+DESIGN ENGINEER
++
+AI-NATIVE PRODUCT BUILDER
+
+==================================================
+38. WORKFLOW STATUS FORMAT
+==================================================
+
+During execution, track project status using:
+
+DISCOVERY — PASS / IN PROGRESS / BLOCKED
+PRODUCT DEFINITION — PASS / IN PROGRESS / BLOCKED
+USER FLOW — PASS / IN PROGRESS / BLOCKED
+INFORMATION ARCHITECTURE — PASS / IN PROGRESS / BLOCKED
+INTERACTION CONTRACT — PASS / IN PROGRESS / BLOCKED
+VISUAL DIRECTION — PASS / IN PROGRESS / BLOCKED
+BRAND — PASS / IN PROGRESS / N/A
+FIGMA — PASS / IN PROGRESS / BLOCKED
+DESIGN SYSTEM — PASS / IN PROGRESS / BLOCKED
+TOKENS — PASS / IN PROGRESS / BLOCKED
+CODE CONNECT — PASS / IN PROGRESS / N/A
+REACT COMPONENTS — PASS / IN PROGRESS / BLOCKED
+FRONTEND ENGINEERING STANDARDS — PASS / IN PROGRESS / BLOCKED
+STORYBOOK — PASS / IN PROGRESS / BLOCKED
+MOTION — PASS / IN PROGRESS / N/A
+PRODUCT IMPLEMENTATION — PASS / IN PROGRESS / BLOCKED
+PLAYWRIGHT — PASS / IN PROGRESS / BLOCKED
+ACCESSIBILITY — PASS / IN PROGRESS / BLOCKED
+VISUAL REGRESSION — PASS / IN PROGRESS / BLOCKED
+RESPONSIVE / REAL DATA — PASS / IN PROGRESS / BLOCKED
+PERFORMANCE — PASS / IN PROGRESS / BLOCKED
+FIGMA ↔ CODE PARITY — PASS / IN PROGRESS / BLOCKED
+PRODUCT METRICS — PASS / PLANNED / N/A
+RELEASE GATE — PASS / FAIL
+CASE STUDY EVIDENCE — PASS / IN PROGRESS
+
+Never advance simply because a phase has been discussed.
+
+Advance because its required output exists and its quality gate has passed.
+
+==================================================
+END OF MASTER WORKFLOW PLAYBOOK
+==================================================
