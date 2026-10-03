@@ -2,7 +2,11 @@
 
 **Project status:** In progress
 
-**Current phase:** PHASE 04 — PRIMARY FLOW — COMPLETE / APPROVED
+**Current canonical phase:** PHASE 01 — DISCOVERY — PARTIAL
+
+**Last canonical phase passing 100%:** None
+
+Canonical status authority: [docs/workflow/CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md)
 
 **Project type:** Portfolio concept / interactive UI prototype
 
@@ -59,11 +63,15 @@ Out of scope:
 - Real inventory
 - Production transactions
 
-## Design process
+## Design process and workflow status
 
-Figma is the primary design artifact. This repository preserves supporting documentation and implementation history and will later contain the coded prototype. The canonical workflow is governed by [AGENTS.md](AGENTS.md). Phase 01 is complete in [docs/BRIEF.md](docs/BRIEF.md), Phase 02 is complete in [docs/UX_ASSUMPTIONS.md](docs/UX_ASSUMPTIONS.md), Phase 03 is complete in [docs/INFORMATION_ARCHITECTURE.md](docs/INFORMATION_ARCHITECTURE.md), and Phase 04 is complete in [docs/PRIMARY_FLOW.md](docs/PRIMARY_FLOW.md). Work after Phase 04 remains **Pending**.
+Figma is the primary design artifact. This repository preserves supporting documentation, implementation history, and the current coded-prototype scaffold. Canonical workflow order and completion are governed by [AGENTS.md](AGENTS.md), the [Master Workflow Playbook](docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt), and the [Canonical Workflow Status](docs/workflow/CANONICAL_WORKFLOW_STATUS.md).
 
-## Approved Figma milestones
+Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASE 01 — DISCOVERY is PARTIAL**, and **no canonical phase currently passes 100%**. Product design work must not advance until the documented Discovery blockers are resolved in a separately authorized remediation phase.
+
+## Historical approved Figma milestones
+
+These milestones preserve the original Volt workflow history. Their labels and approvals remain traceable but do not override current canonical status.
 
 | Milestone | Frame | Status | Figma node |
 | --- | --- | --- | --- |
@@ -97,20 +105,23 @@ docs/
   10-qa.md
   11-case-study.md
   decision-log.md
+  workflow/
+    MASTER_WORKFLOW_PLAYBOOK.txt
+    CANONICAL_WORKFLOW_STATUS.md
 prototype/
 case-study/
 archive/
 ```
 
-No application framework has been selected and no application source tree exists yet.
+The `prototype/` directory now contains a Create Next App scaffold using Next.js, React, TypeScript, and Tailwind CSS. It remains framework scaffolding only; it is not evidence that React Components, Product Implementation, accessibility, testing, responsive, or release gates are complete.
 
 ## Figma
 
-The [main Volt Figma project](https://www.figma.com/design/UIEx2VVwyPeGFUzwkh2dkn/Volt-%E2%80%94-E-commerce-UI---Interactive-Prototype) is the primary design artifact and design source of truth. GitHub preserves the supporting documentation and implementation history and will later preserve the coded prototype.
+The [main Volt Figma project](https://www.figma.com/design/UIEx2VVwyPeGFUzwkh2dkn/Volt-%E2%80%94-E-commerce-UI---Interactive-Prototype) is the primary design artifact and design source of truth. The repository preserves supporting documentation, the current framework scaffold, and future implementation history.
 
 ## Interactive prototype
 
-The future prototype will be a real browser-based responsive UI focused on navigation and interaction. Technology selection and implementation are **Pending**.
+The intended prototype remains a real browser-based responsive UI focused on navigation and interaction. The framework scaffold exists, but Volt product implementation and its downstream gates remain **Pending**.
 
 ## Accessibility
 
@@ -146,6 +157,10 @@ Meaningful design and implementation history must be preserved.
 - In Git, commits preserve meaningful documentation and implementation milestones.
 - History must not be rewritten simply to make the project appear cleaner.
 
-## Current status
+## Current canonical status
 
-The repository, approved Discovery artifacts, canonical workflow governance, Phase 01 product brief, Phase 02 UX assumptions, Phase 03 information architecture, and Phase 04 primary flow are complete. The project remains in progress. Wireframes, explorations, foundations, components, high-fidelity design, responsive behavior, prototype implementation, QA findings, and the final case study are **Pending**.
+- **PHASE 01 — DISCOVERY:** PARTIAL
+- **LAST PHASE PASSING 100%:** NONE
+- **NEXT CANONICAL PHASE:** PHASE 01 — DISCOVERY (completion/remediation remains separately authorized work)
+
+The historical Product Brief, UX Assumptions, Information Architecture, and Primary Flow remain preserved as evidence. They must be evaluated against the Master Workflow rather than treated as four completed canonical phases. Wireframes remain a historical future artifact, not a standalone canonical phase. See [CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md) for the crosswalk and blockers.

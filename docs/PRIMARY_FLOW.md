@@ -11,6 +11,8 @@ This is the canonical Phase 04 primary-flow record for Volt. It defines the boun
 - **Figma file:** [Volt — E-commerce UI & Interactive Prototype](https://www.figma.com/design/UIEx2VVwyPeGFUzwkh2dkn/Volt-%E2%80%94-E-commerce-UI---Interactive-Prototype)
 - **Figma summary:** `FLOW — 01 Primary Discovery & Support` on `02 — IA & Flows`
 
+> **Workflow governance note — 2026-10-02:** “Phase 04 — Primary Flow” is a preserved historical Volt label. Under the Master Workflow this artifact maps to canonical **PHASE 03 — USER FLOW**. Its historical approval is evidence, not automatic canonical completion.
+
 Classification rules used throughout:
 
 - **FACT:** Directly supplied by the source brief or observable in an approved artifact.
@@ -349,5 +351,7 @@ The artifact also shows the five alternate paths and concise recovery loops. It 
 - **Phase 03:** COMPLETE / APPROVED — [INFORMATION_ARCHITECTURE.md](INFORMATION_ARCHITECTURE.md) and `IA — 01 Product Architecture`
 - **Phase 04:** COMPLETE / APPROVED — this document and `FLOW — 01 Primary Discovery & Support`
 - **Next phase:** Wireframes. No wireframe or product screen is created in this phase.
+
+> **Historical checkpoint note:** The preceding Wireframes statement records the former Volt workflow and is superseded for canonical progression. Wireframes are not a standalone canonical Master Workflow phase.
 
 This primary flow is a working design decision subject to later human review when open questions receive evidence. It does not establish observed behavior, validated usability, measured task completion, support effectiveness, conversion impact, production requirements, or completed WCAG conformance.

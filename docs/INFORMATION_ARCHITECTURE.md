@@ -11,6 +11,8 @@ This is the canonical Phase 03 information-architecture record for Volt. It defi
 - **Figma file:** [Volt — E-commerce UI & Interactive Prototype](https://www.figma.com/design/UIEx2VVwyPeGFUzwkh2dkn/Volt-%E2%80%94-E-commerce-UI---Interactive-Prototype)
 - **Figma summary:** `IA — 01 Product Architecture` on `02 — IA & Flows` — node `39:2`
 
+> **Workflow governance note — 2026-10-02:** “Phase 03 — Information Architecture” is a preserved historical Volt label. Under the Master Workflow this artifact maps to canonical **PHASE 04 — INFORMATION ARCHITECTURE**. Its historical approval is evidence, not automatic canonical completion.
+
 Classification rules used throughout:
 
 - **FACT:** Directly supplied by the source brief or observable in an approved artifact.
@@ -238,5 +240,7 @@ All items below remain **OPEN QUESTIONS**:
 - **Phase 02:** COMPLETE / APPROVED — [UX_ASSUMPTIONS.md](UX_ASSUMPTIONS.md)
 - **Phase 03:** COMPLETE / APPROVED — this document and `IA — 01 Product Architecture`
 - **Next phase:** Primary Flow. No Primary Flow artifact, product screen, or wireframe is created in this phase.
+
+> **Historical checkpoint note:** The preceding next-phase statement records the former Volt sequence. Canonical progression is governed by `docs/workflow/CANONICAL_WORKFLOW_STATUS.md`.
 
 This architecture remains a working design decision subject to later human review when open questions receive evidence. It does not establish a production taxonomy, backend, inventory, transaction model, completed accessibility conformance, or validated behavior.

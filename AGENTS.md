@@ -1,3 +1,85 @@
+# WORKFLOW AUTHORITY
+
+This project is governed by:
+
+docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt
+
+Before performing any project phase, Codex MUST:
+
+1. Read AGENTS.md.
+2. Read docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt.
+3. Identify the current approved phase/checkpoint.
+4. Read only the canonical artifacts required by that phase.
+5. Perform only the requested phase scope.
+6. Run the phase-specific quality gate.
+7. Stop before the next phase.
+8. Wait for human approval when required.
+
+The Master Workflow Playbook is the canonical process authority.
+
+## Canonical phase order
+
+The only authoritative canonical phase order is the sequence defined in
+`docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt`:
+
+Discovery
+→ Product Definition
+→ User Flow
+→ Information Architecture
+→ Interaction Contract
+→ Visual Direction
+→ Brand
+→ Figma
+→ Design System
+→ Tokens
+→ Code Connect
+→ React Components
+→ Frontend Engineering Standards
+→ Storybook
+→ Motion
+→ Product Implementation
+→ Playwright
+→ Accessibility
+→ Visual Regression
+→ Responsive / Real Data
+→ Performance
+→ Figma ↔ Code Parity
+→ Product Metrics
+→ Release Gate
+→ Case Study Evidence
+
+Canonical status is recorded in
+`docs/workflow/CANONICAL_WORKFLOW_STATUS.md`.
+
+A canonical phase is complete only when 100% of its required inputs,
+outputs, phase requirements, exit gate, traceability/evidence, required
+read-only audit, and applicable human approval are satisfied. Historical
+approval labels do not override missing Master Workflow requirements.
+
+If AGENTS.md, a prompt, an existing document, or a prior AI-generated
+artifact conflicts with the Master Workflow Playbook, STOP and report
+the conflict before proceeding.
+
+Do not silently reinterpret or skip workflow phases.
+
+Do not begin a later phase because its work appears useful.
+
+Do not implement Foundations, Components, Hi-Fi, Responsive, Prototype,
+QA, or Case Study work before their corresponding workflow gates.
+
+If a run is interrupted:
+resume from the exact current checkpoint according to the Master
+Workflow Playbook.
+
+Human approval governs:
+- UX direction selection
+- visual direction selection
+- brand identity selection
+- significant product tradeoffs
+- final quality approval
+
+
+
 # Volt — Canonical Project Workflow
 
 This file adapts the `CASE_STUDY_WORKFLOW_PLAYBOOK` to the existing Volt project. It governs future repository and Figma work without restarting, replacing, or erasing approved work.
@@ -28,7 +110,11 @@ Explicitly out of scope:
 
 One person or agent may perform several roles, but each review must state which role is active.
 
-## Canonical workflow
+## Historical Volt workflow — preserved, non-authoritative
+
+The sequence below records the workflow previously used by Volt. It is
+preserved for historical traceability only and must not govern canonical
+phase order, phase status, or progression:
 
 Brief
 → UX Assumptions
@@ -52,7 +138,9 @@ Brief
 → Case Study Narrative
 → Figma Case Study Boards
 
-Resume from the latest approved checkpoint. Do not redo completed phases unless a human explicitly reopens them.
+Preserve the artifacts and approvals produced under this historical sequence.
+Map them into the Master Workflow by evidence, but do not infer canonical
+completion from their former numbering or approval label.
 
 ## Evidence and claim integrity
 
@@ -129,9 +217,13 @@ Use that playbook for substantial work involving:
 - release gates
 - case-study evidence
 
-The existing Volt workflow and historical approvals remain valid.
+The existing Volt workflow and historical approvals remain valid as historical
+evidence. They do not by themselves establish completion under the Master
+Workflow.
 
-Do not restart completed phases merely because the master workflow contains additional phases.
+Do not delete or restart valid historical work merely because the Master
+Workflow uses a different phase model. Complete only the missing canonical
+requirements and preserve the original evidence and decisions.
 
 For the current project:
 

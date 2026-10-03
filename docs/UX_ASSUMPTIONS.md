@@ -10,6 +10,8 @@ This is the canonical Phase 02 UX assumptions record for Volt. It makes provisio
 - **Figma file:** [Volt — E-commerce UI & Interactive Prototype](https://www.figma.com/design/UIEx2VVwyPeGFUzwkh2dkn/Volt-%E2%80%94-E-commerce-UI---Interactive-Prototype)
 - **Figma summary:** `DISCOVERY — 04 UX Assumptions` — node `34:2`
 
+> **Workflow governance note — 2026-10-02:** “Phase 02 — UX Assumptions” is a preserved historical Volt label. This artifact remains supporting evidence, but canonical phase order and completion are governed by `docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt` and `docs/workflow/CANONICAL_WORKFLOW_STATUS.md`.
+
 Classification rules used throughout:
 
 - **FACT:** Directly supplied by the source brief or observable in an approved artifact.
@@ -137,5 +139,7 @@ The following are **future validation needs**, not completed research. Priority 
 - **Detailed Phase 02 source of truth:** this document
 - **Phase 02 Figma visual summary:** `DISCOVERY — 04 UX Assumptions` — node `34:2`
 - **Next phase:** Information Architecture remains **Pending** until this phase passes its read-only audit and human approval gate.
+
+> **Historical checkpoint note:** The preceding next-phase statement records the former Volt workflow and is superseded for canonical progression. It must not be read as the current Master Workflow checkpoint.
 
 This document does not establish final information architecture, final responsive solutions, a real product catalogue, validated audience behavior, accessibility compliance, business metrics, or product outcomes.
