@@ -1,4 +1,4 @@
-﻿---
+---
 name: interaction-contract
 description: Interaction specification for an approved component or flow before implementation. Use when explicitly defining states, triggers, transitions, keyboard/focus behavior, responsive behavior, motion, and reduced-motion behavior. Do not use for visual art direction, product strategy, implementation architecture, or QA audits.
 argument-hint: "[component, flow, or interaction]"

@@ -1,4 +1,4 @@
-﻿---
+---
 name: figma-design-qa
 description: Read-only Figma design QA for component consistency, variables, tokens, auto layout, responsive behavior, accessibility, hierarchy, design-system integrity, and Figma-to-code readiness. Audit first; never silently remediate.
 argument-hint: "[page, frame, component, or flow]"

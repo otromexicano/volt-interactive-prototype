@@ -1,4 +1,4 @@
-﻿---
+---
 name: design-engineering-director
 description: Implementation direction for translating approved product, interaction, design-system, and Figma decisions into maintainable React, Next.js, TypeScript, Tailwind, tokens, components, responsive behavior, and testable architecture. Use only for implementation or implementation planning, not upstream product/visual decisions or audit-only review.
 argument-hint: "[feature or implementation]"

@@ -1,4 +1,4 @@
-﻿---
+---
 name: case-study-design-director
 description: Case-study evidence and portfolio narrative governance. Use for collecting artifacts, tracing decisions, documenting audits and remediation, distinguishing verified outcomes from assumptions, and building credible Product Design + Design Engineering case-study narratives.
 argument-hint: "[phase, evidence, or narrative]"

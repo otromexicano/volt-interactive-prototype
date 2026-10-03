@@ -1,4 +1,4 @@
-﻿---
+---
 name: product-design-director
 description: Product design direction for evidence-based UX decisions, problem framing, information architecture, user flows, assumptions, open questions, and human approval checkpoints. Use for substantial product or UX decisions in Volt and similar case-study projects.
 argument-hint: "[feature, flow, or product decision]"

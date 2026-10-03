@@ -1,4 +1,4 @@
-﻿---
+---
 name: visual-design-director
 description: Visual direction for already-defined product interfaces. Use when evaluating or selecting hierarchy, composition, typography, color, spacing, density, and brand expression after product/UX direction exists. Do not use for product strategy, interaction specifications, implementation architecture, or audit-only QA.
 argument-hint: "[screen, component, or visual direction]"
