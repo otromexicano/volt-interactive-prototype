@@ -3,7 +3,7 @@
 ## Reconciliation status
 
 - **Reconciliation date:** 2026-10-03
-- **Status:** Canonical Phase 01 — Discovery, Phase 02 — Product Definition, and Phase 03 — User Flow are **PASS / COMPLETE**; Phase 04 — Information Architecture is the next canonical phase and has not started
+- **Status:** Canonical Phase 01 — Discovery, Phase 02 — Product Definition, Phase 03 — User Flow, and Phase 04 — Information Architecture are **PASS / COMPLETE**; Phase 05 — Interaction Contract is the next canonical phase and has not started
 - **Repository:** `C:\Projects\volt-interactive-prototype`
 - **Authoritative workflow:** `docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt`
 - **Governance file:** `AGENTS.md`
@@ -41,18 +41,19 @@ If any mandatory item is absent, the phase remains **PARTIAL** or **MISSING**. A
 | Phase 01 — Discovery | **PASS / COMPLETE** | PASS | All mandatory Discovery requirements, the canonical output, exit gate, claim integrity, traceability, read-only audit, and human approval are satisfied. |
 | Phase 02 — Product Definition | **PASS / COMPLETE** | PASS | All mandatory requirements, the canonical Product Definition output, approved product direction, feature-to-need traceability, exit gate, scope integrity, Discovery consistency, claim integrity, traceability, historical preservation, read-only completion audit, and final human approval are satisfied. |
 | Phase 03 — User Flow | **PASS / COMPLETE** | PASS | All mandatory User Flow requirements, the canonical output, current-scope alignment, exit gate, traceability, historical preservation, claim integrity, Figma read-only design audit, read-only completion audit, and final human approval are satisfied. |
-| Phase 04 — Information Architecture | **PARTIAL / NOT STARTED CANONICALLY** | Not evaluated for canonical progression | Historical Information Architecture evidence exists, but canonical Phase 04 work has not started. |
-| Phase 05 — Interaction Contract | **PARTIAL** | FAIL | No complete component-level interaction-state specification exists. |
-| Phase 06 and later | **MISSING / NOT ELIGIBLE FOR PROGRESSION** | Not evaluated for progression | Sequential progression stops before Phase 04 begins. Existing downstream placeholders and framework scaffolding do not satisfy later gates. |
+| Phase 04 — Information Architecture | **PASS / COMPLETE** | PASS | All mandatory Phase 04 requirements, the canonical output, current-scope alignment, exit gate, canonical naming, Product Definition and User Flow consistency, metadata boundary, traceability, historical preservation, claim integrity, Figma traceability and read-only design audit, Git scope, read-only completion audit re-run, and final human approval are satisfied. |
+| Phase 05 — Interaction Contract | **NOT STARTED** | Not evaluated | Phase 05 is the next canonical phase but has not started. |
+| Phase 06 and later | **MISSING / NOT ELIGIBLE FOR PROGRESSION** | Not evaluated for progression | Sequential progression stops before Phase 05 begins. Existing downstream placeholders and framework scaffolding do not satisfy later gates. |
 
 ## Current checkpoint
 
-- **LAST PHASE PASSING 100%:** PHASE 03 — USER FLOW
-- **CURRENT CANONICAL CHECKPOINT:** PHASE 03 — USER FLOW — **PASS / COMPLETE**
-- **NEXT CANONICAL PHASE:** PHASE 04 — INFORMATION ARCHITECTURE
+- **LAST PHASE PASSING 100%:** PHASE 04 — INFORMATION ARCHITECTURE
+- **CURRENT CANONICAL CHECKPOINT:** PHASE 04 — INFORMATION ARCHITECTURE — **PASS / COMPLETE**
+- **NEXT CANONICAL PHASE:** PHASE 05 — INTERACTION CONTRACT
 - **PHASE 03 STARTED:** **YES**
-- **PHASE 04 STARTED:** **NO**
-- **CURRENT ACTION AUTHORIZED:** Record Phase 03 closure only; do not begin Phase 04
+- **PHASE 04 STARTED:** **YES**
+- **PHASE 05 STARTED:** **NO**
+- **CURRENT ACTION AUTHORIZED:** Await explicit authorization before beginning Phase 05 — Interaction Contract
 - **DISCOVERY REMEDIATION:** Complete on 2026-10-02; canonical output is `docs/01-discovery.md`
 - **PHASE 01 READ-ONLY AUDIT:** PASS on 2026-10-02
 - **PHASE 01 HUMAN APPROVAL:** APPROVED by the user on 2026-10-02
@@ -71,6 +72,15 @@ If any mandatory item is absent, the phase remains **PARTIAL** or **MISSING**. A
 - **PHASE 03 READ-ONLY COMPLETION AUDIT:** **PASS** on 2026-10-03
 - **PHASE 03 FINAL HUMAN APPROVAL:** **APPROVED — October 3, 2026**
 - **PHASE 03 COMPLETION:** **PASS / COMPLETE** on 2026-10-03
+- **PHASE 04 INITIAL READ-ONLY AUDIT:** **COMPLETE** on 2026-10-03; findings required three human IA-direction selections and targeted remediation
+- **PHASE 04 HUMAN IA-DIRECTION PROPOSAL:** **COMPLETE** on 2026-10-03
+- **PHASE 04 HUMAN IA-DIRECTION SELECTION:** **COMPLETE / APPROVED** on 2026-10-03
+- **PHASE 04 TARGETED REMEDIATION:** **COMPLETE** on 2026-10-03
+- **PHASE 04 CANONICAL REPOSITORY OUTPUT:** `docs/04-information-architecture.md` created
+- **PHASE 04 FIGMA CANDIDATE:** `IA — 02 Canonical Information Architecture Candidate` on `90 — Candidates`, node `70:2`
+- **PHASE 04 READ-ONLY COMPLETION AUDIT RE-RUN:** **PASS** on 2026-10-03
+- **PHASE 04 FINAL HUMAN APPROVAL:** **APPROVED — October 3, 2026**
+- **PHASE 04 COMPLETION:** **PASS / COMPLETE** on 2026-10-03
 
 ## Phase 01 completion record
 
@@ -147,7 +157,50 @@ Completion evidence:
 
 The accepted canonical Phase 03 Figma artifact is `FLOW — 02 Canonical User Flow Candidate`, node `61:2`, preserved on `90 — Candidates`. Historical Figma node `44:2`, `FLOW — 01 Primary Discovery & Support`, remains preserved unchanged, and `99 — Archive` remains preserved.
 
-Phase 03 — User Flow is **PASS / COMPLETE**. Phase 04 — Information Architecture is the next canonical phase and has not started.
+Phase 03 — User Flow is **PASS / COMPLETE**. Phase 04 — Information Architecture subsequently passed its read-only completion audit re-run and received final human approval. Phase 05 — Interaction Contract is the next canonical phase and has not started.
+
+## Phase 04 completion record
+
+The Phase 04 initial read-only audit found that the historical Information Architecture contained useful evidence but conflicted with approved Phase 02 and Phase 03 scope. The human IA-direction checkpoint approved:
+
+- Privacy Policy as required in the shared/global orientation layer with footer access supplementary and optional;
+- one shared destination set with Tier 1 core task/orientation destinations (`Home`, `Catalogue`, `Contact`), Tier 2 supporting-information destinations (`Information`, `About / Team`, `Privacy Policy`), and contextual `Product Detail` beneath Catalogue; and
+- a minimal current-scope metadata boundary.
+
+Targeted remediation created:
+
+- `docs/04-information-architecture.md` as the one canonical repository Phase 04 output; and
+- `IA — 02 Canonical Information Architecture Candidate`, node `70:2`, on Figma page `90 — Candidates`.
+
+Completion evidence:
+
+- **Mandatory Phase 04 requirements:** PASS
+- **Canonical Information Architecture output:** PASS
+- **Current-scope alignment:** PASS
+- **Canonical naming:** PASS
+- **Navigation:** PASS
+- **Hierarchy:** PASS
+- **Sections:** PASS
+- **Groups:** PASS
+- **Parent/child relationships:** PASS
+- **Content priority:** PASS
+- **Search/filter structure:** PASS
+- **Metadata boundary:** PASS
+- **Page relationships:** PASS
+- **Product Definition consistency:** PASS
+- **User Flow consistency:** PASS
+- **Direct-entry/recovery architecture:** PASS
+- **Traceability:** PASS
+- **Historical preservation:** PASS
+- **Claim integrity:** PASS
+- **Figma traceability:** PASS
+- **Figma read-only design audit:** PASS
+- **Exit gate:** PASS
+- **Git scope:** PASS
+- **Read-only completion audit re-run:** PASS
+- **Final human approval:** **APPROVED — October 3, 2026**
+
+The accepted canonical Phase 04 Figma artifact is `IA — 02 Canonical Information Architecture Candidate`, node `70:2`, preserved on `90 — Candidates`. The completion record preserves `docs/INFORMATION_ARCHITECTURE.md`, `docs/PRIMARY_FLOW.md`, Figma nodes `39:2`, `44:2`, and `61:2`, and `99 — Archive` unchanged. Phase 04 — Information Architecture is **PASS / COMPLETE**. Phase 05 — Interaction Contract is the next canonical phase and has not started.
 
 ## Evidence and history preservation
 
