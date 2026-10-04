@@ -2,9 +2,9 @@
 
 **Project status:** In progress
 
-**Current canonical phase:** PHASE 02 — PRODUCT DEFINITION — COMPLETE
+**Current canonical phase:** PHASE 03 — USER FLOW — COMPLETE
 
-**Last canonical phase passing 100%:** PHASE 02 — PRODUCT DEFINITION
+**Last canonical phase passing 100%:** PHASE 03 — USER FLOW
 
 Canonical status authority: [docs/workflow/CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md)
 
@@ -67,7 +67,7 @@ Out of scope:
 
 Figma is the primary design artifact. This repository preserves supporting documentation, implementation history, and the current coded-prototype scaffold. Canonical workflow order and completion are governed by [AGENTS.md](AGENTS.md), the [Master Workflow Playbook](docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt), and the [Canonical Workflow Status](docs/workflow/CANONICAL_WORKFLOW_STATUS.md).
 
-Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASE 01 — DISCOVERY is COMPLETE**, and **PHASE 02 — PRODUCT DEFINITION is COMPLETE**. **PHASE 03 — USER FLOW** is the next canonical phase and has not started.
+Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASE 01 — DISCOVERY is COMPLETE**, **PHASE 02 — PRODUCT DEFINITION is COMPLETE**, and **PHASE 03 — USER FLOW is COMPLETE**. **PHASE 04 — INFORMATION ARCHITECTURE** is the next canonical phase and has not started.
 
 ## Historical approved Figma milestones
 
@@ -161,8 +161,9 @@ Meaningful design and implementation history must be preserved.
 
 - **PHASE 01 — DISCOVERY:** COMPLETE
 - **PHASE 02 — PRODUCT DEFINITION:** COMPLETE
-- **LAST PHASE PASSING 100%:** PHASE 02 — PRODUCT DEFINITION
-- **NEXT CANONICAL PHASE:** PHASE 03 — USER FLOW
-- **PHASE 03 STARTED:** NO
+- **PHASE 03 — USER FLOW:** COMPLETE
+- **LAST PHASE PASSING 100%:** PHASE 03 — USER FLOW
+- **NEXT CANONICAL PHASE:** PHASE 04 — INFORMATION ARCHITECTURE
+- **PHASE 04 STARTED:** NO
 
 The historical Product Brief, UX Assumptions, Information Architecture, and Primary Flow remain preserved as evidence. They must be evaluated against the Master Workflow rather than treated as four completed canonical phases. Wireframes remain a historical future artifact, not a standalone canonical phase. See [CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md) for the crosswalk and blockers.
