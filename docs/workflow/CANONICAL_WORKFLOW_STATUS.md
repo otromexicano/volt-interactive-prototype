@@ -2,8 +2,8 @@
 
 ## Reconciliation status
 
-- **Reconciliation date:** 2026-10-03
-- **Status:** Canonical Phase 01 — Discovery, Phase 02 — Product Definition, Phase 03 — User Flow, and Phase 04 — Information Architecture are **PASS / COMPLETE**; Phase 05 — Interaction Contract is the next canonical phase and has not started
+- **Reconciliation date:** 2026-10-08
+- **Status:** Canonical Phases 01–05 are **PASS / COMPLETE**; Phase 06 — Visual Direction is **NOT STARTED**
 - **Repository:** `C:\Projects\volt-interactive-prototype`
 - **Authoritative workflow:** `docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt`
 - **Governance file:** `AGENTS.md`
@@ -42,18 +42,20 @@ If any mandatory item is absent, the phase remains **PARTIAL** or **MISSING**. A
 | Phase 02 — Product Definition | **PASS / COMPLETE** | PASS | All mandatory requirements, the canonical Product Definition output, approved product direction, feature-to-need traceability, exit gate, scope integrity, Discovery consistency, claim integrity, traceability, historical preservation, read-only completion audit, and final human approval are satisfied. |
 | Phase 03 — User Flow | **PASS / COMPLETE** | PASS | All mandatory User Flow requirements, the canonical output, current-scope alignment, exit gate, traceability, historical preservation, claim integrity, Figma read-only design audit, read-only completion audit, and final human approval are satisfied. |
 | Phase 04 — Information Architecture | **PASS / COMPLETE** | PASS | All mandatory Phase 04 requirements, the canonical output, current-scope alignment, exit gate, canonical naming, Product Definition and User Flow consistency, metadata boundary, traceability, historical preservation, claim integrity, Figma traceability and read-only design audit, Git scope, read-only completion audit re-run, and final human approval are satisfied. |
-| Phase 05 — Interaction Contract | **NOT STARTED** | Not evaluated | Phase 05 is the next canonical phase but has not started. |
-| Phase 06 and later | **MISSING / NOT ELIGIBLE FOR PROGRESSION** | Not evaluated for progression | Sequential progression stops before Phase 05 begins. Existing downstream placeholders and framework scaffolding do not satisfy later gates. |
+| Phase 05 — Interaction Contract | **PASS / COMPLETE** | PASS | All authoritative Phase 05 requirements, the canonical interaction-state specification, fourteen major contracts, state and modality coverage, responsive and motion boundaries, non-happy-path coverage, scope and upstream consistency, accessibility contract boundary, traceability, historical preservation, claim integrity, Figma traceability and read-only design audit, Git scope, exit gate, read-only completion audit re-run, and final human approval are satisfied. |
+| Phase 06 and later | **NOT STARTED** | Not evaluated | Phase 06 — Visual Direction is the next canonical phase. No Phase 06 audit, decision, artifact, Figma work, or implementation work has started. Existing downstream placeholders and framework scaffolding do not satisfy later gates. |
 
 ## Current checkpoint
 
-- **LAST PHASE PASSING 100%:** PHASE 04 — INFORMATION ARCHITECTURE
-- **CURRENT CANONICAL CHECKPOINT:** PHASE 04 — INFORMATION ARCHITECTURE — **PASS / COMPLETE**
-- **NEXT CANONICAL PHASE:** PHASE 05 — INTERACTION CONTRACT
+- **LAST PHASE PASSING 100%:** PHASE 05 — INTERACTION CONTRACT
+- **CURRENT CANONICAL CHECKPOINT:** PHASE 05 — INTERACTION CONTRACT — **PASS / COMPLETE**
+- **NEXT CANONICAL PHASE:** PHASE 06 — VISUAL DIRECTION
+- **PHASE 06 STATUS:** **NOT STARTED**
 - **PHASE 03 STARTED:** **YES**
 - **PHASE 04 STARTED:** **YES**
-- **PHASE 05 STARTED:** **NO**
-- **CURRENT ACTION AUTHORIZED:** Await explicit authorization before beginning Phase 05 — Interaction Contract
+- **PHASE 05 STARTED:** **YES**
+- **PHASE 06 STARTED:** **NO**
+- **CURRENT ACTION AUTHORIZED:** Phase 05 workflow-status closure only; Phase 06 has not started
 - **DISCOVERY REMEDIATION:** Complete on 2026-10-02; canonical output is `docs/01-discovery.md`
 - **PHASE 01 READ-ONLY AUDIT:** PASS on 2026-10-02
 - **PHASE 01 HUMAN APPROVAL:** APPROVED by the user on 2026-10-02
@@ -81,6 +83,16 @@ If any mandatory item is absent, the phase remains **PARTIAL** or **MISSING**. A
 - **PHASE 04 READ-ONLY COMPLETION AUDIT RE-RUN:** **PASS** on 2026-10-03
 - **PHASE 04 FINAL HUMAN APPROVAL:** **APPROVED — October 3, 2026**
 - **PHASE 04 COMPLETION:** **PASS / COMPLETE** on 2026-10-03
+- **PHASE 05 INITIAL READ-ONLY AUDIT:** **COMPLETE** before targeted remediation; status was **MISSING** and required human interaction-direction selection plus canonical-output remediation
+- **PHASE 05 HUMAN DECISION PROPOSAL:** **COMPLETE** before the human selection checkpoint
+- **PHASE 05 HUMAN INTERACTION-DIRECTION SELECTION:** **COMPLETE / APPROVED** on 2026-10-04; six selections recorded as human-approved design decisions
+- **PHASE 05 TARGETED REMEDIATION:** **COMPLETE** on 2026-10-04
+- **PHASE 05 CANONICAL REPOSITORY OUTPUT:** `docs/05-interaction-contract.md` created
+- **PHASE 05 FIGMA CANDIDATE:** `INTERACTION — 01 Canonical Interaction Contract Candidate` on `90 — Candidates`, node `80:2`
+- **PHASE 05 READ-ONLY COMPLETION AUDIT RE-RUN:** **PASS** on 2026-10-08
+- **PHASE 05 PRIOR FIGMA CLIPPING FINDING:** **RESOLVED / PASS**
+- **PHASE 05 FINAL HUMAN APPROVAL:** **APPROVED — October 8, 2026**
+- **PHASE 05 COMPLETION:** **PASS / COMPLETE** on 2026-10-08
 
 ## Phase 01 completion record
 
@@ -157,7 +169,7 @@ Completion evidence:
 
 The accepted canonical Phase 03 Figma artifact is `FLOW — 02 Canonical User Flow Candidate`, node `61:2`, preserved on `90 — Candidates`. Historical Figma node `44:2`, `FLOW — 01 Primary Discovery & Support`, remains preserved unchanged, and `99 — Archive` remains preserved.
 
-Phase 03 — User Flow is **PASS / COMPLETE**. Phase 04 — Information Architecture subsequently passed its read-only completion audit re-run and received final human approval. Phase 05 — Interaction Contract is the next canonical phase and has not started.
+Phase 03 — User Flow is **PASS / COMPLETE**. Phase 04 — Information Architecture subsequently passed its read-only completion audit re-run and received final human approval. Phase 05 — Interaction Contract subsequently passed its read-only completion audit re-run and received final human approval.
 
 ## Phase 04 completion record
 
@@ -200,7 +212,66 @@ Completion evidence:
 - **Read-only completion audit re-run:** PASS
 - **Final human approval:** **APPROVED — October 3, 2026**
 
-The accepted canonical Phase 04 Figma artifact is `IA — 02 Canonical Information Architecture Candidate`, node `70:2`, preserved on `90 — Candidates`. The completion record preserves `docs/INFORMATION_ARCHITECTURE.md`, `docs/PRIMARY_FLOW.md`, Figma nodes `39:2`, `44:2`, and `61:2`, and `99 — Archive` unchanged. Phase 04 — Information Architecture is **PASS / COMPLETE**. Phase 05 — Interaction Contract is the next canonical phase and has not started.
+The accepted canonical Phase 04 Figma artifact is `IA — 02 Canonical Information Architecture Candidate`, node `70:2`, preserved on `90 — Candidates`. The completion record preserves `docs/INFORMATION_ARCHITECTURE.md`, `docs/PRIMARY_FLOW.md`, Figma nodes `39:2`, `44:2`, and `61:2`, and `99 — Archive` unchanged. Phase 04 — Information Architecture is **PASS / COMPLETE**. Phase 05 — Interaction Contract subsequently passed its read-only completion audit re-run and received final human approval.
+
+## Phase 05 completion record
+
+The Phase 05 initial read-only audit found no canonical interaction-state specification. A human decision proposal was prepared, and the user approved six interaction-direction decisions covering the canonical artifact strategy, fourteen-contract inventory, responsive equivalence, origin-aware Product Detail return, state applicability, and interaction-level accessibility intent.
+
+Targeted remediation created:
+
+- `docs/05-interaction-contract.md` as the one canonical repository Phase 05 output; and
+- `INTERACTION — 01 Canonical Interaction Contract Candidate`, node `80:2`, on Figma page `90 — Candidates`.
+
+The remediation defines all fourteen approved major contracts; explicitly classifies every required visual, data, interaction, responsive, motion, and reduced-motion state; preserves the generic non-submission Contact boundary; limits errors to approved evidence-safe conditions; records persistence and reset boundaries; excludes deferred/removed behavior; and traces the result to canonical Phases 02–04 and preserved Figma evidence.
+
+Completion evidence:
+
+- **Initial read-only audit:** COMPLETE
+- **Human decision proposal:** COMPLETE
+- **Human interaction-direction selection:** COMPLETE / APPROVED — October 4, 2026
+- **Canonical repository artifact:** CREATED — `docs/05-interaction-contract.md`
+- **Figma candidate:** CREATED — node `80:2`
+- **Targeted remediation:** COMPLETE — October 4, 2026
+- **Authoritative Phase 05 requirements:** PASS
+- **Canonical interaction-state specification:** PASS
+- **14 major contracts:** PASS
+- **Visual state coverage:** PASS
+- **Data state coverage:** PASS
+- **Pointer/click contract:** PASS
+- **Keyboard contract:** PASS
+- **Focus contract:** PASS
+- **Screen-reader contract:** PASS
+- **Responsive mobile:** PASS
+- **Responsive tablet:** PASS
+- **Responsive desktop:** PASS
+- **Motion boundary:** PASS
+- **Reduced-motion contract:** PASS
+- **Non-happy-path coverage:** PASS
+- **Contact boundary:** PASS
+- **Error/recovery:** PASS
+- **Persistence/reset:** PASS
+- **Current-scope alignment:** PASS
+- **Canonical naming:** PASS
+- **Product Definition consistency:** PASS
+- **User Flow consistency:** PASS
+- **Information Architecture consistency:** PASS
+- **Accessibility contract boundary:** PASS
+- **Traceability:** PASS
+- **Historical preservation:** PASS
+- **Claim integrity:** PASS
+- **Figma traceability:** PASS
+- **Figma read-only design audit:** PASS
+- **Prior Figma clipping finding:** RESOLVED / PASS
+- **Git scope:** PASS
+- **Phase 05 exit gate:** PASS
+- **Read-only completion audit re-run:** PASS
+- **Final human approval:** APPROVED — October 8, 2026
+- **Phase 05 completion:** PASS / COMPLETE
+- **Next canonical phase:** PHASE 06 — VISUAL DIRECTION
+- **Phase 06 status:** NOT STARTED
+
+The accepted canonical Phase 05 Figma review artifact is `INTERACTION — 01 Canonical Interaction Contract Candidate`, node `80:2`, preserved on `90 — Candidates`. Supporting nodes `61:2` and `70:2`, historical nodes `39:2` and `44:2`, and `99 — Archive` remain preserved unchanged. Phase 05 — Interaction Contract is **PASS / COMPLETE**. Phase 06 — Visual Direction is the next canonical phase and has not started.
 
 ## Evidence and history preservation
 

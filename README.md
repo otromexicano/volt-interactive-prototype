@@ -2,9 +2,11 @@
 
 **Project status:** In progress
 
-**Current canonical phase:** PHASE 04 — INFORMATION ARCHITECTURE — COMPLETE
+**Current canonical phase:** PHASE 05 — INTERACTION CONTRACT — COMPLETE
 
-**Last canonical phase passing 100%:** PHASE 04 — INFORMATION ARCHITECTURE
+**Last canonical phase passing 100%:** PHASE 05 — INTERACTION CONTRACT
+
+**Next canonical phase:** PHASE 06 — VISUAL DIRECTION — NOT STARTED
 
 Canonical status authority: [docs/workflow/CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md)
 
@@ -67,7 +69,7 @@ Out of scope:
 
 Figma is the primary design artifact. This repository preserves supporting documentation, implementation history, and the current coded-prototype scaffold. Canonical workflow order and completion are governed by [AGENTS.md](AGENTS.md), the [Master Workflow Playbook](docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt), and the [Canonical Workflow Status](docs/workflow/CANONICAL_WORKFLOW_STATUS.md).
 
-Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASE 01 — DISCOVERY is COMPLETE**, **PHASE 02 — PRODUCT DEFINITION is COMPLETE**, **PHASE 03 — USER FLOW is COMPLETE**, and **PHASE 04 — INFORMATION ARCHITECTURE is COMPLETE**. **PHASE 05 — INTERACTION CONTRACT is the next canonical phase and has NOT STARTED**.
+Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASE 01 — DISCOVERY is COMPLETE**, **PHASE 02 — PRODUCT DEFINITION is COMPLETE**, **PHASE 03 — USER FLOW is COMPLETE**, **PHASE 04 — INFORMATION ARCHITECTURE is COMPLETE**, and **PHASE 05 — INTERACTION CONTRACT is COMPLETE**. The next canonical phase is **PHASE 06 — VISUAL DIRECTION**, which has not started.
 
 ## Historical approved Figma milestones
 
@@ -97,6 +99,7 @@ docs/
   02-product-definition.md
   03-user-flow.md
   04-information-architecture.md
+  05-interaction-contract.md
   02-ia-flows.md
   03-wireframes.md
   04-explorations.md
@@ -166,10 +169,12 @@ Meaningful design and implementation history must be preserved.
 - **PHASE 02 — PRODUCT DEFINITION:** COMPLETE
 - **PHASE 03 — USER FLOW:** COMPLETE
 - **PHASE 04 — INFORMATION ARCHITECTURE:** COMPLETE
-- **PHASE 05 — INTERACTION CONTRACT:** NOT STARTED
-- **LAST PHASE PASSING 100%:** PHASE 04 — INFORMATION ARCHITECTURE
-- **NEXT CANONICAL PHASE:** PHASE 05 — INTERACTION CONTRACT
+- **PHASE 05 — INTERACTION CONTRACT:** COMPLETE
+- **LAST PHASE PASSING 100%:** PHASE 05 — INTERACTION CONTRACT
+- **NEXT CANONICAL PHASE:** PHASE 06 — VISUAL DIRECTION
+- **PHASE 06 STATUS:** NOT STARTED
 - **PHASE 04 STARTED:** YES
-- **PHASE 05 STARTED:** NO
+- **PHASE 05 STARTED:** YES
+- **PHASE 06 STARTED:** NO
 
 The historical Product Brief, UX Assumptions, Information Architecture, and Primary Flow remain preserved as evidence. They must be evaluated against the Master Workflow rather than treated as four completed canonical phases. Wireframes remain a historical future artifact, not a standalone canonical phase. See [CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md) for the crosswalk and blockers.
