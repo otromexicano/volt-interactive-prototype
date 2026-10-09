@@ -3,7 +3,7 @@
 ## Reconciliation status
 
 - **Reconciliation date:** 2026-10-08
-- **Status:** Canonical Phases 01–05 are **PASS / COMPLETE**; Phase 06 — Visual Direction is **NOT STARTED**
+- **Status:** Canonical Phases 01–06 are **PASS / COMPLETE**; Phase 07 — Brand is **NOT STARTED**
 - **Repository:** `C:\Projects\volt-interactive-prototype`
 - **Authoritative workflow:** `docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt`
 - **Governance file:** `AGENTS.md`
@@ -43,19 +43,21 @@ If any mandatory item is absent, the phase remains **PARTIAL** or **MISSING**. A
 | Phase 03 — User Flow | **PASS / COMPLETE** | PASS | All mandatory User Flow requirements, the canonical output, current-scope alignment, exit gate, traceability, historical preservation, claim integrity, Figma read-only design audit, read-only completion audit, and final human approval are satisfied. |
 | Phase 04 — Information Architecture | **PASS / COMPLETE** | PASS | All mandatory Phase 04 requirements, the canonical output, current-scope alignment, exit gate, canonical naming, Product Definition and User Flow consistency, metadata boundary, traceability, historical preservation, claim integrity, Figma traceability and read-only design audit, Git scope, read-only completion audit re-run, and final human approval are satisfied. |
 | Phase 05 — Interaction Contract | **PASS / COMPLETE** | PASS | All authoritative Phase 05 requirements, the canonical interaction-state specification, fourteen major contracts, state and modality coverage, responsive and motion boundaries, non-happy-path coverage, scope and upstream consistency, accessibility contract boundary, traceability, historical preservation, claim integrity, Figma traceability and read-only design audit, Git scope, exit gate, read-only completion audit re-run, and final human approval are satisfied. |
-| Phase 06 and later | **NOT STARTED** | Not evaluated | Phase 06 — Visual Direction is the next canonical phase. No Phase 06 audit, decision, artifact, Figma work, or implementation work has started. Existing downstream placeholders and framework scaffolding do not satisfy later gates. |
+| Phase 06 — Visual Direction | **PASS / COMPLETE** | PASS | All authoritative requirements, expected output, fourteen visual dimensions, upstream and scope consistency, phase boundaries, selected-territory completeness, Figma verification, risk preservation, claim integrity, traceability, historical preservation, Git scope, exit gate, completion-audit re-run, and final human approval are satisfied. VD-T01 — Territory A (`98:2`) is canonical; Territories B and C remain rejected/preserved exploration evidence. |
+| Phase 07 — Brand and later | **NOT STARTED** | Not evaluated | Brand is the next canonical phase but has not started. Existing downstream placeholders and framework scaffolding do not satisfy later gates. |
 
 ## Current checkpoint
 
-- **LAST PHASE PASSING 100%:** PHASE 05 — INTERACTION CONTRACT
-- **CURRENT CANONICAL CHECKPOINT:** PHASE 05 — INTERACTION CONTRACT — **PASS / COMPLETE**
-- **NEXT CANONICAL PHASE:** PHASE 06 — VISUAL DIRECTION
-- **PHASE 06 STATUS:** **NOT STARTED**
+- **LAST PHASE PASSING 100%:** PHASE 06 — VISUAL DIRECTION
+- **CURRENT COMPLETED PHASE:** PHASE 06 — VISUAL DIRECTION — **PASS / COMPLETE**
+- **CURRENT PHASE 06 CHECKPOINT:** **RECORD CLOSURE COMPLETE**
+- **NEXT CANONICAL PHASE:** PHASE 07 — BRAND — **NOT STARTED**
+- **PHASE 06 STATUS:** **PASS / COMPLETE**
 - **PHASE 03 STARTED:** **YES**
 - **PHASE 04 STARTED:** **YES**
 - **PHASE 05 STARTED:** **YES**
-- **PHASE 06 STARTED:** **NO**
-- **CURRENT ACTION AUTHORIZED:** Phase 05 workflow-status closure only; Phase 06 has not started
+- **PHASE 06 STARTED:** **YES**
+- **CURRENT ACTION AUTHORIZED:** Phase 06 record closure complete; no Phase 07 work has started or is authorized by this closure
 - **DISCOVERY REMEDIATION:** Complete on 2026-10-02; canonical output is `docs/01-discovery.md`
 - **PHASE 01 READ-ONLY AUDIT:** PASS on 2026-10-02
 - **PHASE 01 HUMAN APPROVAL:** APPROVED by the user on 2026-10-02
@@ -93,6 +95,25 @@ If any mandatory item is absent, the phase remains **PARTIAL** or **MISSING**. A
 - **PHASE 05 PRIOR FIGMA CLIPPING FINDING:** **RESOLVED / PASS**
 - **PHASE 05 FINAL HUMAN APPROVAL:** **APPROVED — October 8, 2026**
 - **PHASE 05 COMPLETION:** **PASS / COMPLETE** on 2026-10-08
+- **PHASE 06 INITIAL READ-ONLY AUDIT:** **COMPLETE** before the human exploration-direction checkpoint; canonical output and current visual-direction evidence were missing
+- **PHASE 06 HUMAN DECISION PROPOSAL:** **COMPLETE** before the human exploration-direction selection
+- **PHASE 06 HUMAN EXPLORATION-DIRECTION SELECTION:** **COMPLETE / APPROVED** on 2026-10-08; VD-01 Option A, VD-02 Option A with three territories, and VD-03 Option A approved; VD-04 reserved
+- **PHASE 06 CANONICAL REPOSITORY OUTPUT:** `docs/06-visual-direction.md` created
+- **PHASE 06 FIGMA CANDIDATES:** `98:2` — `VD — 01 Territory A`; `98:3` — `VD — 02 Territory B`; `98:4` — `VD — 03 Territory C` on `90 — Candidates`
+- **PHASE 06 THREE-TERRITORY EXPLORATION:** **COMPLETE**
+- **PHASE 06 COMPARATIVE REVIEW:** **COMPLETE / PASS**
+- **PHASE 06 FIGMA QA:** **PASS** for each candidate and cross-territory equality
+- **PHASE 06 VD-04 FINAL TERRITORY SELECTION:** **COMPLETE — HUMAN SELECTED VD-T01 TERRITORY A / `98:2`**
+- **PHASE 06 SELECTED-TERRITORY RECONCILIATION:** **PASS**
+- **PHASE 06 FIGMA LIFECYCLE RECONCILIATION:** **PASS / COMPLETE**
+- **PHASE 06 TERRITORY B DISPOSITION:** **REJECTED FOR CANONICAL SELECTION / PRESERVED**
+- **PHASE 06 TERRITORY C DISPOSITION:** **REJECTED FOR CANONICAL SELECTION / PRESERVED**
+- **PHASE 06 INITIAL COMPLETION AUDIT:** **COMPLETE — FAILED WITH TWO TARGETED DOCUMENTATION FINDINGS**
+- **PHASE 06 TARGETED DOCUMENTATION REMEDIATION:** **COMPLETE**
+- **PHASE 06 READ-ONLY COMPLETION AUDIT RE-RUN:** **PASS — 100%**
+- **PHASE 06 FINAL HUMAN APPROVAL:** **APPROVED — October 8, 2026**
+- **PHASE 06 RECORD CLOSURE:** **COMPLETE**
+- **PHASE 06 COMPLETION:** **PASS / COMPLETE**
 
 ## Phase 01 completion record
 
@@ -268,10 +289,39 @@ Completion evidence:
 - **Read-only completion audit re-run:** PASS
 - **Final human approval:** APPROVED — October 8, 2026
 - **Phase 05 completion:** PASS / COMPLETE
-- **Next canonical phase:** PHASE 06 — VISUAL DIRECTION
-- **Phase 06 status:** NOT STARTED
+- **Current completed phase:** PHASE 06 — VISUAL DIRECTION
+- **Phase 06 status:** PASS / COMPLETE
+- **Next canonical phase:** PHASE 07 — BRAND — NOT STARTED
 
-The accepted canonical Phase 05 Figma review artifact is `INTERACTION — 01 Canonical Interaction Contract Candidate`, node `80:2`, preserved on `90 — Candidates`. Supporting nodes `61:2` and `70:2`, historical nodes `39:2` and `44:2`, and `99 — Archive` remain preserved unchanged. Phase 05 — Interaction Contract is **PASS / COMPLETE**. Phase 06 — Visual Direction is the next canonical phase and has not started.
+The accepted canonical Phase 05 Figma review artifact is `INTERACTION — 01 Canonical Interaction Contract Candidate`, node `80:2`, preserved on `90 — Candidates`. Supporting nodes `61:2` and `70:2`, historical nodes `39:2` and `44:2`, and `99 — Archive` remain preserved unchanged. Phase 05 — Interaction Contract is **PASS / COMPLETE**. Phase 06 has the canonical repository record, three equally developed editable exploration frames, human-selected Territory A at `98:2`, preserved rejected Territories B and C, a 100% passing completion-audit re-run, final human approval, and completed record closure. Phase 06 — Visual Direction is **PASS / COMPLETE**. Phase 07 — Brand is next and remains **NOT STARTED**.
+
+## Phase 06 completion record
+
+Phase 06 established three bounded visual territories after its initial audit and human decision proposal. The comparative review passed, and the user selected VD-T01 — Territory A, Figma node `98:2`, as a **HUMAN-APPROVED DESIGN DECISION**. Territories B and C remain rejected for canonical selection and preserved as valid exploration evidence.
+
+The first formal completion audit failed only because the canonical Territory A risk record omitted two approved documentation constraints: later measured contrast validation for warm subtle borders/supporting tones, and prevention of literal craft styling or gender/audience stereotype. A targeted documentation remediation added those constraints without changing the selected direction or Figma. The completion-audit re-run then passed 100%, the exit gate passed, and final human approval was granted on October 8, 2026.
+
+Completion evidence:
+
+- **Initial read-only audit:** COMPLETE
+- **Human decision proposal:** COMPLETE
+- **Human exploration-direction selection:** COMPLETE / APPROVED
+- **Three-territory exploration:** COMPLETE
+- **Comparative review:** COMPLETE / PASS
+- **VD-04 human territory selection:** COMPLETE
+- **Selected territory reconciliation:** COMPLETE
+- **Figma lifecycle reconciliation:** COMPLETE
+- **Initial completion audit:** COMPLETE — FAILED WITH TWO TARGETED DOCUMENTATION FINDINGS
+- **Targeted documentation remediation:** COMPLETE
+- **Completion-audit re-run:** PASS — 100%
+- **Final human approval:** APPROVED — October 8, 2026
+- **Record closure:** COMPLETE
+- **Selected territory:** VD-T01 — Territory A
+- **Selected Figma node:** `98:2` — `VD — 01 Territory A`
+- **Exit gate:** PASS
+- **Final Phase 06 status:** PASS / COMPLETE
+
+The closed traceability chain is Phase 01 evidence → Phase 02 Product Definition → Phase 03 User Flow → Phase 04 Information Architecture → Phase 05 Interaction Contract → Phase 06 visual-direction evidence → three bounded territories → comparative review → VD-04 human selection → Territory A → Figma `98:2` → completion audit → targeted remediation → completion-audit re-run PASS → final human approval → Phase 06 COMPLETE. Phase 07 — Brand owns the final identity system and remains not started.
 
 ## Evidence and history preservation
 

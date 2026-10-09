@@ -2,11 +2,11 @@
 
 **Project status:** In progress
 
-**Current canonical phase:** PHASE 05 — INTERACTION CONTRACT — COMPLETE
+**Current completed canonical phase:** PHASE 06 — VISUAL DIRECTION — COMPLETE
 
-**Last canonical phase passing 100%:** PHASE 05 — INTERACTION CONTRACT
+**Last canonical phase passing 100%:** PHASE 06 — VISUAL DIRECTION
 
-**Next canonical phase:** PHASE 06 — VISUAL DIRECTION — NOT STARTED
+**Next canonical phase:** PHASE 07 — BRAND — NOT STARTED
 
 Canonical status authority: [docs/workflow/CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md)
 
@@ -69,7 +69,7 @@ Out of scope:
 
 Figma is the primary design artifact. This repository preserves supporting documentation, implementation history, and the current coded-prototype scaffold. Canonical workflow order and completion are governed by [AGENTS.md](AGENTS.md), the [Master Workflow Playbook](docs/workflow/MASTER_WORKFLOW_PLAYBOOK.txt), and the [Canonical Workflow Status](docs/workflow/CANONICAL_WORKFLOW_STATUS.md).
 
-Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASE 01 — DISCOVERY is COMPLETE**, **PHASE 02 — PRODUCT DEFINITION is COMPLETE**, **PHASE 03 — USER FLOW is COMPLETE**, **PHASE 04 — INFORMATION ARCHITECTURE is COMPLETE**, and **PHASE 05 — INTERACTION CONTRACT is COMPLETE**. The next canonical phase is **PHASE 06 — VISUAL DIRECTION**, which has not started.
+Historical Volt artifacts remain approved historical evidence, but their former phase numbers do not establish canonical completion. Under the strict Master Workflow reconciliation, **PHASES 01–06 are COMPLETE**. Phase 06 selected VD-T01 — Territory A (`98:2`) as the human-approved canonical visual direction after three-territory exploration, comparative review, targeted documentation remediation, a 100% passing completion-audit re-run, and final human approval. Territories B and C remain preserved rejected exploration evidence. **PHASE 07 — BRAND is next and has NOT STARTED.**
 
 ## Historical approved Figma milestones
 
@@ -100,6 +100,7 @@ docs/
   03-user-flow.md
   04-information-architecture.md
   05-interaction-contract.md
+  06-visual-direction.md
   02-ia-flows.md
   03-wireframes.md
   04-explorations.md
@@ -170,11 +171,14 @@ Meaningful design and implementation history must be preserved.
 - **PHASE 03 — USER FLOW:** COMPLETE
 - **PHASE 04 — INFORMATION ARCHITECTURE:** COMPLETE
 - **PHASE 05 — INTERACTION CONTRACT:** COMPLETE
-- **LAST PHASE PASSING 100%:** PHASE 05 — INTERACTION CONTRACT
-- **NEXT CANONICAL PHASE:** PHASE 06 — VISUAL DIRECTION
-- **PHASE 06 STATUS:** NOT STARTED
+- **PHASE 06 — VISUAL DIRECTION:** COMPLETE
+- **LAST PHASE PASSING 100%:** PHASE 06 — VISUAL DIRECTION
+- **CURRENT COMPLETED PHASE:** PHASE 06 — VISUAL DIRECTION
+- **NEXT PHASE:** PHASE 07 — BRAND
+- **PHASE 07 STATUS:** NOT STARTED
 - **PHASE 04 STARTED:** YES
 - **PHASE 05 STARTED:** YES
-- **PHASE 06 STARTED:** NO
+- **PHASE 06 STARTED:** YES
+- **PHASE 07 STARTED:** NO
 
 The historical Product Brief, UX Assumptions, Information Architecture, and Primary Flow remain preserved as evidence. They must be evaluated against the Master Workflow rather than treated as four completed canonical phases. Wireframes remain a historical future artifact, not a standalone canonical phase. See [CANONICAL_WORKFLOW_STATUS.md](docs/workflow/CANONICAL_WORKFLOW_STATUS.md) for the crosswalk and blockers.
